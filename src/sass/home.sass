@@ -1,0 +1,496 @@
+.homepage-main
+    position: relative;
+    
+.home-slider 
+    width: 100%;
+     
+.home-slider__content
+    position: relative;
+        
+
+.home-slider__dotnav
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    a
+        border: 2px solid #0099cc;
+    li.uk-active
+        a
+            background-color: #0099cc;
+
+.sitetitle 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+.sitetitle__logo
+    margin-top: 95px;
+    margin-bottom: 10px;
+    img
+        @media (max-width: $breakpoint-small-max)
+            width: 68px;
+            height: 85px; 
+
+.sitetitle__text
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.75px;
+    line-height: 1;
+    span
+        line-height: 1.4;
+        text-transform: uppercase;
+    @media (max-width: $breakpoint-small-max)
+        font-size: 24px;  
+
+.homepage-content
+    position: relative;
+    margin-top: -400px;
+    @media (max-width: $breakpoint-small-max)
+        margin-top: -233px;
+
+.homepage-content__menu
+    ul 
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li 
+            margin-bottom: 11px;
+            &:last-of-type
+                margin-right: 0;
+        a
+            display: block;
+            width: 155px;
+            min-height: 75px;
+            box-sizing: border-box;
+            padding: 10px 13px 14px 11px;
+            background-color: #0099cc;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            line-height: 1.3;
+            &:hover
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #007aa3;
+            span 
+                font-size: 14px;
+                text-transform: uppercase;
+
+.homepage-first-section
+    padding-bottom: 50px;
+
+.homepage-news
+    padding: 40px 35px 25px 40px;
+    background-color: #f2f2f2;
+    position: relative;
+    &::before
+        content: '';
+        width: 230px;
+        height: 110px;
+        position: absolute;
+        bottom: 31px;
+        right: 33px;
+        border-right: 10px solid #eaeaea;
+        border-bottom: 10px solid #eaeaea;
+
+.homepage-news__header
+    margin-bottom: 50px;
+
+.homepage-news__title
+    color: #999999;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+.button-more
+    display: inline-block;
+    padding: 0 5px 0 9px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    color: #010101;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover
+        background-color: #d7d5d5;
+        text-decoration: none;
+
+.button-more--dark
+    color: #010101;
+    &:hover
+        color: #010101;
+
+.button-more--light
+    color: #666666;
+    &:hover
+        color: #666666;
+
+.homepage-news-item
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px dotted #e8e7e7;
+    &:last-of-type
+        margin-bottom: 15px;
+
+.homepage-news-item__date
+    color: #128ebe;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    span
+        margin-right: 5px;
+        color: #128ebe;
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+    div
+        margin-top: 3px;
+
+.homepage-news-item__title
+    display: block;
+    padding-right: 50px;
+    color: #006699;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 1.49;
+    &:hover
+        color: #cc0000;
+
+.homepage-mark
+    padding: 2px 11px;
+    background-color: #cdcdcd;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+
+.homepage-mark--dark
+    color: #d2d2d2;
+    background-color: #1374a2
+    
+.homepage-holiday 
+    display: block;
+    padding: 40px 30px 31px 35px;
+    background-color: #38b2da;
+    &:hover
+        background-color: #2492bc;
+
+.homepage-holiday__header
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+
+.homepage-holiday__title
+    display: block;
+    margin-bottom: 8px;
+    color: #003366;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    &:hover 
+        color: #cc0000;
+        text-decoration: none;
+
+.homepage-holiday__intro
+    padding-right: 36px;    
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.08px;
+
+.homepage-holiday__more
+    color: #666666;
+    font-size: 14px;
+    font-weight: 700;
+
+.homepage-schedule
+    padding: 50px 40px 66px 44px;
+    background-color: #fdc659;
+    position: relative;
+    &::before
+        content: '';
+        width: 238px;
+        height: 124px;
+        position: absolute;
+        bottom: 27px;
+        right: 32px;
+        border-right: 10px solid #fdbe41;
+        border-bottom: 10px solid #fdbe41;
+
+.homepage-schedule__header
+    margin-bottom: 63px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.6px;
+
+.homepage-schedule__text
+    padding-right: 20px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.08px;
+    font-weight: 500;
+    letter-spacing: 0.08px;
+    span 
+        font-weight: 700;
+
+.homepage-schedule__untendable
+    margin-top: 20px;
+
+.homepage-month-event
+    padding: 45px 35px 29px 40px;
+
+.homepage-month-event__header
+    margin-bottom: 92px;
+
+.homepage-month-event__title
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+
+.homepage-month-event__pagetitle
+    display: block;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.24px;
+    line-height: 1.25;
+    &:hover
+        color: #ffffff;
+        text-decoration: none;
+
+.homepage-second-section
+    padding-bottom: 50px;
+
+.border-block
+    height: 5px;
+    border-top: 1px dotted #e8e7e7;
+
+.home-page-greetings
+    padding-top: 5px;
+    padding-bottom: 27px;
+    border-bottom: 1px dotted #e8e7e7;
+
+.home-page-greetings__text
+    padding-right: 24px;
+    line-height: 1.35;
+    span 
+        float: right;
+
+.outer-link   
+    display: flex;
+    min-height: 155px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border: 8px solid #eaeaea;
+    background-color: #f2f2f2;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+    & > div 
+        width: 100%;
+    &:hover
+        color: #666666;
+        text-decoration: none;
+
+.outer-link__image
+    width: 78px;
+    margin-right: 8px;
+    text-align: center;
+    img
+        max-width: 100%;
+
+.homepage-documents
+    padding: 40px 40px 26px 41px;
+    background-color: #3f90c4;
+    margin-bottom: 10px;
+    background-color: #3f90c4;
+    position: relative;
+    position: relative;
+    &::before
+        content: '';
+        width: 238px;
+        height: 124px;
+        position: absolute;
+        bottom: 31px;
+        right: 33px;
+        border-right: 10px solid #4398c3
+        border-bottom: 10px solid #4398c3;
+
+.homepage-documents__title
+    color: #fefefe;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+
+.homepage-documents__header
+    margin-bottom: 45px;
+
+.homepage-documents-item
+    display: block;
+    margin-bottom: 30px;
+    margin-right: 58px;
+    padding-left: 47px;
+    padding-bottom: 41px;
+    border-bottom: 1px dotted #5ca7cd;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11);
+    background: url('../img/icon-doc-gray.svg') 0% 6% no-repeat;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.375;
+    text-decoration: underline;
+    &:hover
+        color: #ffffff;
+        background-image: url('../img/icon-doc-white.svg');
+    &:last-of-type
+        margin-bottom: 40px;
+
+.event 
+    padding: 45px 40px 30px 36px;
+    position: relative;
+
+.event__header
+    margin-bottom: 95px;
+    text-align: right;
+
+.event__title
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.24px;
+    line-height: 1.2;
+    &:hover
+        color: #ffffff;
+        text-decoration: none;
+
+.button-more--event
+    font-size: 14px;
+
+.event__mark
+    background-color: #b15e0c;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+
+@mixin link-tile
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    min-height: 319px;
+    font-size: 24px;
+    font-weight: 900;
+    position: relative;
+
+@mixin link-mark
+    position: absolute;
+    bottom: 23px;
+    right: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+
+.homepage-map
+    @include link-tile;
+    padding-top: 135px;
+    padding-left: 30px;
+    background: url('../img/bg-map.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    color: #666666;
+    letter-spacing: 0.6px;
+    &:hover
+        color: #666666;
+        text-decoration: none;
+
+.homepage-map__mark
+    @include link-mark;
+    color: #666666;
+    background-color: #e2e2e2;
+
+.homepage-strategy
+    @include link-tile;
+    padding-top: 50px;
+    padding-left: 40px;
+    background: url('../img/bg-strategy.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    color: #fefefe;
+    line-height: 1.3;
+    &:hover
+        color: #fefefe;
+        text-decoration: none;
+
+.homepage-strategy__mark
+    @include link-mark;
+    color: #ffffff;
+    background-color: #5099c8;
+
+.homepage-effectivness
+    @include link-tile;
+    padding: 125px 40px 50px 40px;
+    background-color: #e9e9e9;
+    color: #666666;
+    line-height: 1.3;
+    &:hover
+        color: #666666;
+        text-decoration: none;
+    
+.homepage-effectivness__mark
+    @include link-mark;
+    color: #666666;
+    background-color: #e2e2e2;
+
+.homepage-zoning
+    @include link-tile; 
+    padding: 120px 30px 50px 30px;
+    border: 8px solid #eaeaea;
+    background-color: #f2f2f2;
+    color: #999999;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    &:hover
+        color: #999999;
+        text-decoration: none;
+
+.homepage-stop-corruption
+    display: flex;
+    min-height: 155px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 8px solid #eaeaea;
+    background-color: #c00000;
+    background-image: linear-gradient(-56deg, rgba(0, 0, 0, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%);
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    &:hover
+        color: #fefefe;
+        text-decoration: none;
+
+.homepage-stop-corruption__sign
+    width: 88px;
+    text-align: center;
+    font-size: 47px;
+
