@@ -1,7 +1,17 @@
+.header
+    z-index: 1000;
+    
 .header__bar 
     box-shadow: inset 0 -1px 0 #4f6269;
     background-color: #666666;
 
+.header__bar-container
+    @media (max-width: $breakpoint-small-max)
+        height: 48px;
+        padding: 0;
+        & > div 
+            line-height: 1;
+    
 .header__reception
     display: inline-block;
     padding: 14px 28px 14px 57px;
@@ -13,6 +23,15 @@
         background-color: #333333
         text-decoration: none;
         color: #cccccc;
+    @media (max-width: $breakpoint-small-max)
+        background-position: 50% 50%;
+        background-size: 18px 14px;
+        padding: 0;
+        width: 48px;
+        height: 47px;
+        span 
+            display: none;
+
 
 @mixin placeholder
     &::-webkit-input-placeholder 
@@ -43,8 +62,8 @@
     border: 1px solid #5c5b5b;
     padding: 8px 26px 8px 14px;
     background: #f3f3f3 url('../img/icon-search.svg') 98% 50% no-repeat;
-    position: relative;
     @include placeholder;
+    position: relative;
     &::before
         content: '';
         height: 100%;
@@ -52,6 +71,16 @@
         top: 0;
         left: -11px;
         border-left: 1px dotted #5b5b5b;
+    @media (max-width: $breakpoint-small-max)
+        display: none;
+
+.header__search-small
+    display: none;
+    width: 48px;
+    height: 48px;
+    background: #666666 url('../img/icon-search-light.svg') 50% 50% no-repeat;
+    @media (max-width: $breakpoint-small-max)
+        display: inline-block;
 
 .contrast-version
     display: inline-block;
@@ -66,6 +95,14 @@
         background-color: #000000;
         text-decoration: none;
         color: #ebebeb;
+    @media (max-width: $breakpoint-small-max)
+        background-size: 25px 17px;
+        background-position: 50% 50%;
+        padding: 0;
+        width: 48px;
+        height: 47px;
+        span 
+            display: none;
 
 .header-menu
     @media (max-width: $breakpoint-small-max)
@@ -98,3 +135,11 @@
                 &:hover
                     background-color: #fbfbfb;
                     text-decoration: none;
+
+.small-menu
+    display: none;
+    width: 48px;
+    height: 48px;
+    background: #525151 url('../img/icon-menu.svg') 50% 50% no-repeat;
+    @media (max-width: $breakpoint-small-max)
+        display: block;

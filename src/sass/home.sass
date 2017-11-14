@@ -7,6 +7,9 @@
 .home-slider__content
     position: relative;
         
+.home-slider__images
+    @media (max-width: $breakpoint-small-max)
+        height: 593px !important;
 
 .home-slider__dotnav
     position: absolute;
@@ -18,18 +21,23 @@
     li.uk-active
         a
             background-color: #0099cc;
+    @media (max-width: $breakpoint-small-max)
+        top: 45%;
 
 .sitetitle 
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    @media (max-width: $breakpoint-small-max)
+        width: 559px;
 
 .sitetitle__logo
     margin-top: 95px;
     margin-bottom: 10px;
-    img
-        @media (max-width: $breakpoint-small-max)
+    @media (max-width: $breakpoint-small-max)
+        margin-top: 69px;
+        img
             width: 68px;
             height: 85px; 
 
@@ -54,33 +62,27 @@
         margin-top: -233px;
 
 .homepage-content__menu
-    ul 
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        li 
-            margin-bottom: 11px;
-            &:last-of-type
-                margin-right: 0;
-        a
-            display: block;
-            width: 155px;
-            min-height: 75px;
-            box-sizing: border-box;
-            padding: 10px 13px 14px 11px;
-            background-color: #0099cc;
+    margin-bottom: 10px;
+    a
+        display: block;
+        min-height: 75px;
+        box-sizing: border-box;
+        padding: 10px 13px 14px 11px;
+        background-color: #0099cc;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 1.3;
+        &:hover
             color: #ffffff;
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.4px;
-            line-height: 1.3;
-            &:hover
-                color: #ffffff;
-                text-decoration: none;
-                background-color: #007aa3;
-            span 
-                font-size: 14px;
-                text-transform: uppercase;
+            text-decoration: none;
+            background-color: #007aa3;
+        span 
+            font-size: 14px;
+            text-transform: uppercase;     
+    @media (max-width: $breakpoint-small-max)
+        padding-right: 98px;
 
 .homepage-first-section
     padding-bottom: 50px;
@@ -293,6 +295,16 @@
     line-height: 1.35;
     span 
         float: right;
+    @media (max-width: $breakpoint-small-max)
+        height: 441px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+.button-more--greetings
+    display: none;
+    margin-top: 27px;
+    @media (max-width: $breakpoint-small-max)
+        display: inline-block;
 
 .outer-link   
     display: flex;
