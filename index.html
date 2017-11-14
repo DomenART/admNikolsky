@@ -12,15 +12,16 @@
         <header class="header" uk-sticky>
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
-                    <div>
-                        <a href="#" class="small-menu"><span></span></a>
-                        <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
+                    <a href="#" class="small-menu"></a>
+                    <div class="header-logo-small uk-flex uk-flex-middle">
+                        <img src="img/header-logo.png" alt="">
+                        <div>Никольское сельское поселение</div>
                     </div>
-                    <div class="js-header-right">
-                        <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
-                        <a href="#" class="header__search-small"></a>
-                        <a href="#" class="contrast-version js-contrast-header"><span>Версия для слабовидящих</span></a>
-                    </div>
+                    <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
+                    <span class="header__space"></span>
+                    <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
+                    <a href="#" class="header__search-small"></a>
+                    <a href="#" class="contrast-version contrast-version--header js-contrast-header"><span>Версия для слабовидящих</span></a>
                 </div>
             </div>
             <nav class="header-menu">
@@ -86,25 +87,27 @@
             </div>
             <div class="homepage-content">
                 <div class="uk-container">
-                    <nav class="homepage-content__menu">
-                        <div class="uk-width-3-4@m uk-child-width-1-4 uk-child-width-1-6@l uk-grid-small" uk-grid uk-height-match="target: a">
-                            <div>
-                                <a href="#"><span>НОВОСТИ</span></a>
-                            </div>
-                            <div>
-                                <a href="#"><span>ЖКХ</span></a>
-                            </div>
-                            <div>
-                                <a href="#">Муниципальные <span>УСЛУГИ</span></a>
-                            </div>
-                            <div>
-                                <a href="#">Муниципальный <span>КОНТРОЛЬ</span></a>
-                            </div>
-                            <div>
-                                <a href="#">Муниципальные <span>ЗАКУПКИ</span></a>
-                            </div>
-                            <div>
-                                <a href="#">Муниципальные <span>СЛУЖБА</span></a>
+                    <nav class="homepage-content__menu uk-grid uk-grid-small">
+                        <div class="uk-width-3-4@m">
+                            <div class="uk-child-width-1-4 uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
+                                <div>
+                                    <a href="#"><span>НОВОСТИ</span></a>
+                                </div>
+                                <div>
+                                    <a href="#"><span>ЖКХ</span></a>
+                                </div>
+                                <div>
+                                    <a href="#">Муниципальные <span>УСЛУГИ</span></a>
+                                </div>
+                                <div>
+                                    <a href="#">Муниципальный <span>КОНТРОЛЬ</span></a>
+                                </div>
+                                <div>
+                                    <a href="#">Муниципальные <span>ЗАКУПКИ</span></a>
+                                </div>
+                                <div>
+                                    <a href="#">Муниципальные <span>СЛУЖБА</span></a>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -189,18 +192,18 @@
                             <div class="uk-width-1-2@m">
                                 <div class="uk-grid-small uk-margin-small" uk-grid>
                                     <div class="uk-width-1-2">
-                                        <article class="homepage-holiday">
-                                            <header class="homepage-holiday__header">
+                                        <a href="#" class="homepage-holiday">
+                                            <span class="homepage-holiday__header">
                                                 Мы празднуем:
-                                            </header>
-                                            <a class="homepage-holiday__title">
+                                            </span>
+                                            <span class="homepage-holiday__title">
                                                 День села - название отмечаемого события
-                                            </a>
-                                            <div class="homepage-holiday__intro">
+                                            </span>
+                                            <span class="homepage-holiday__intro">
                                                 Уважаемые жители и гости Никольского сельского поселения! Приглашаем Вас на празднование Дня села...
-                                            </div>
-                                            <a href="#" class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></a>
-                                        </article>
+                                            </span>
+                                            <span class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></span>
+                                        </a>
                                     </div>
                                     <div class="uk-width-1-2">
                                         <article class="homepage-schedule">
@@ -222,17 +225,17 @@
                                         </article>
                                     </div>
                                 </div>
-                                <article class="homepage-month-event" style="background: url('img/month-event.jpg') 50% 50% no-repeat; background-size: cover;">
-                                    <header class="homepage-month-event__header uk-flex uk-flex-between uk-flex-middle">
-                                        <div class="homepage-month-event__title">Событие месяца</div>
-                                        <div>
-                                            <a href="#" class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></a>
-                                        </div>
-                                    </header>
-                                    <a href="#" class="homepage-month-event__pagetitle">
+                                <a href="#" class="homepage-month-event" style="background: url('img/month-event.jpg') 50% 50% no-repeat; background-size: cover;">
+                                    <span class="homepage-month-event__header uk-flex uk-flex-between uk-flex-middle">
+                                        <span class="homepage-month-event__title">Событие месяца</span>
+                                        <span>
+                                            <span class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></span>
+                                        </span>
+                                    </span>
+                                    <span href="#" class="homepage-month-event__pagetitle">
                                         Заголовок события месяца. Фоновая картинка- выводится из новости, обращать внимание, чтобы нижняя часть была темной, тк текст белый
-                                    </a>
-                                </article>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -243,7 +246,7 @@
                                 <div class="border-block"></div>
                                 <div class="border-block"></div>
                                 <article class="home-page-greetings">
-                                    <div class="uk-grid uk-grid-small">
+                                    <div class=" uk-grid-small" uk-grid>
                                         <div class="uk-width-1-3">
                                             <img src="img/photo.jpg" alt="">
                                         </div>
@@ -342,15 +345,15 @@
                                     </a>
                                     <span class="homepage-mark homepage-mark--dark">Деятельность</span>
                                 </section>
-                                <article class="event" style="background: url('img/event.jpg') 50% 50% no-repeat; background-size: cover;">
-                                    <div class="event__header">
-                                        <a href="#" class="button-more button-more--light button-more--event">подробнее<span uk-icon="icon: arrow-right"></span></a>
-                                    </div>
-                                    <a href="#" class="event__title">
+                                <a href="#" class="event" style="background: url('img/event.jpg') 50% 50% no-repeat; background-size: cover;">
+                                    <span class="event__header">
+                                        <span href="#" class="button-more button-more--light button-more--event">подробнее<span uk-icon="icon: arrow-right"></span></span>
+                                    </span>
+                                    <span href="#" class="event__title">
                                         Заголовок события . Фоновая картинка- выводится из новости, обращать внимание, чтобы нижняя часть была темной, тк текст белый
-                                    </a>
+                                    </span>
                                     <span class="event__mark homepage-mark">новости</span>
-                                </article>
+                                </a>
                             </div>
                             <div class="uk-width-1-2 uk-width-1-4@m">
                                 <a href="#" class="homepage-map">
@@ -418,7 +421,7 @@
         <footer class="footer">
             <nav class="footer__nav">
                 <div class="uk-container">
-                    <div class="uk-grid uk-child-width-1-4">
+                    <div class="uk-grid uk-child-width-1-3 uk-child-width-1-4@l">
                         <div>
                             <div class="footer-owner">
                                 <div class="footer-owner__logo">

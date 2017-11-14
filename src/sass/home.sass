@@ -8,18 +8,22 @@
     position: relative;
         
 .home-slider__images
+    height: 929px;
     @media (max-width: $breakpoint-small-max)
         height: 593px !important;
 
 .home-slider__dotnav
     position: absolute;
-    top: 35%;
+    top: 32.5%;
     left: 50%;
     transform: translate(-50%,-50%);
     a
-        border: 2px solid #0099cc;
+        width: 13px;
+        height: 13px;
+        border: 3px solid rgba(255, 255, 255, 0.6);
     li.uk-active
         a
+            border: 3px solid #0099cc;
             background-color: #0099cc;
     @media (max-width: $breakpoint-small-max)
         top: 45%;
@@ -33,7 +37,7 @@
         width: 559px;
 
 .sitetitle__logo
-    margin-top: 95px;
+    margin-top: 75px;
     margin-bottom: 10px;
     @media (max-width: $breakpoint-small-max)
         margin-top: 69px;
@@ -57,7 +61,7 @@
 
 .homepage-content
     position: relative;
-    margin-top: -400px;
+    margin-top: -520px;
     @media (max-width: $breakpoint-small-max)
         margin-top: -233px;
 
@@ -183,8 +187,13 @@
     background-color: #38b2da;
     &:hover
         background-color: #2492bc;
+        text-decoration: none;
+        .homepage-holiday__title
+            color: #cc0000;
+            text-decoration: none;
 
 .homepage-holiday__header
+    display: block;
     margin-bottom: 30px;
     color: #ffffff;
     font-size: 24px;
@@ -199,11 +208,9 @@
     letter-spacing: 0.5px;
     line-height: 1.2;
     text-transform: uppercase;
-    &:hover 
-        color: #cc0000;
-        text-decoration: none;
 
 .homepage-holiday__intro
+    display: block;
     padding-right: 36px;    
     margin-bottom: 25px;
     color: #ffffff;
@@ -254,7 +261,12 @@
     margin-top: 20px;
 
 .homepage-month-event
+    display: block;
+    min-height: 370px;
+    box-sizing: border-box;
     padding: 45px 35px 29px 40px;
+    &:hover
+        text-decoration: none;
 
 .homepage-month-event__header
     margin-bottom: 92px;
@@ -333,6 +345,9 @@
     img
         max-width: 100%;
 
+.homepage-third-section
+    margin-bottom: 13px !important;
+
 .homepage-documents
     padding: 40px 40px 26px 41px;
     background-color: #3f90c4;
@@ -381,14 +396,21 @@
         margin-bottom: 40px;
 
 .event 
+    display: block;
+    min-height: 370px;
+    box-sizing: border-box;
     padding: 45px 40px 30px 36px;
     position: relative;
+    &:hover
+        text-decoration: none;
 
 .event__header
+    display: block;
     margin-bottom: 95px;
     text-align: right;
 
 .event__title
+    display: block;
     color: #ffffff;
     font-size: 24px;
     font-weight: 900;
