@@ -1,142 +1,142 @@
 @mixin footer-title
-    margin-bottom: 13px;
-    text-shadow: 0 -1px 0 #000000;
-    color: #999999;
-    font-size: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    line-height: 1.32;
+    margin-bottom: 13px
+    text-shadow: 0 -1px 0 #000000
+    color: #999999
+    font-size: 16px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 0.4px
+    line-height: 1.32
 
 @mixin footer-link
-    text-shadow: 0 -1px 0 #000000;
-    color: #999999;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: underline;
-    text-align: center;
+    text-shadow: 0 -1px 0 #000000
+    color: #999999
+    font-family: Lato
+    font-size: 16px
+    font-weight: 400
+    text-decoration: underline
+    text-align: center
     &:hover
-        color: #ffffff;
+        color: #ffffff
 
 .footer
-    background-color: #494949;
+    background-color: #494949
 
 .footer__nav
     padding:
-        top: 38px;
-        bottom: 70px;
+        top: 38px
+        bottom: 70px
 
 .footer-owner
-    margin-bottom: 65px;
-    text-align: center;
+    margin-bottom: 65px
+    text-align: center
 
 .footer-owner__logo
-    margin-bottom: 15px;
+    margin-bottom: 15px
 
 .footer-owner__text
-    color: #999999;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.12px;
-    line-height: 1.3;
+    color: #999999
+    font-size: 12px
+    font-weight: 400
+    letter-spacing: 0.12px
+    line-height: 1.3
 
 
 .footer-phones__title
-    @include footer-title;
-    text-align: center;
+    @include footer-title
+    text-align: center
 
 .footer-section__list,
 .footer-phones__pool,
 .footer-emails__pool
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: 0
+    padding: 0
+    list-style-type: none
 
 .footer-phones
-    margin-bottom: 50px;
+    margin-bottom: 50px
     
 .footer-phones__pool
     li  
-        margin-bottom: 1px;
-        line-height: 1;
-        text-align: center;
+        margin-bottom: 1px
+        line-height: 1
+        text-align: center
     a
         @include footer-link
-        text-decoration: none;
+        text-decoration: none
         
 .footer-section
-    margin-bottom: 47px;
+    margin-bottom: 47px
 
 .footer-emails
-    padding-left: 45px;
+    padding-left: 45px
     @media (max-width: $breakpoint-small-max)
-        padding-left: 0px;
+        padding-left: 0px
 
 .footer-emails__pool
-    position: relative;
+    position: relative
     li
-        margin-bottom: 5px;
-        line-height: 1;
+        margin-bottom: 5px
+        line-height: 1
     a  
         @include footer-link
-        padding-left: 25px; 
-        text-decoration: none;
-        position: relative;
+        padding-left: 25px 
+        text-decoration: none
+        position: relative
         &::before
-            content: '';
-            width: 16px;
-            height: 13px;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background: url('../img/icon-letter.svg') 0 50% no-repeat;
-            background-size: 16px 13px;
+            content: ''
+            width: 16px
+            height: 13px
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            background: url('../img/icon-letter.svg') 0 50% no-repeat
+            background-size: 16px 13px
     span
-        border-bottom: 1px dashed #8f8f98;
+        border-bottom: 1px dashed #8f8f98
     
 .footer-section__title
-    display: block;
-    margin-bottom: 24px;
-    @include footer-title;
+    display: block
+    margin-bottom: 24px
+    @include footer-title
     &:hover
-        color: #ffffff;
-        text-decoration: none;
+        color: #ffffff
+        text-decoration: none
 
 .footer-section__list
     li 
-        margin-bottom: 1.5px;
-        line-height: 1;  
+        margin-bottom: 1.5px
+        line-height: 1  
     a
-        @include footer-link;
+        @include footer-link
 
 .footer-bar
-    padding: 10px 0;
-    border-top: 1px solid #434242;
-    box-shadow: 0px 1px 1px #434242;
+    padding: 10px 0
+    border-top: 1px solid #434242
+    box-shadow: 0px 1px 1px #434242
 
 .footer-bar__counter
-    margin-right: 43px;
+    margin-right: 43px
 
 .footer-bar__sitemap
     @include footer-link
-    margin-right: 78px;
+    margin-right: 78px
 
 .footer-bar__date
     @include footer-link
 
 .footer-bar__developers
-    display: block;
-    color: #999999;
-    font-size: 12px;
-    font-weight: 400;
-    text-decoration: none;
-    padding-right: 130px;
-    margin-right: 35px;
-    background: url('../img/developers-rest.png') 100% 50% no-repeat;
-    transition: 3s;
+    display: block
+    color: #999999
+    font-size: 12px
+    font-weight: 400
+    text-decoration: none
+    padding-right: 130px
+    margin-right: 35px
+    background: url('../img/developers-rest.png') 100% 50% no-repeat
+    transition: 3s
     &:hover
-        color: #999999;
-        text-decoration: none;
-        background-image: url('../img/developers-hover.png');
+        color: #999999
+        text-decoration: none
+        background-image: url('../img/developers-hover.png')
