@@ -13,10 +13,11 @@
             line-height: 1;
     
 .header__reception
-    min-width: 48px;
+    min-width: 214px;
     order: 2;
     white-space: nowrap;
     display: inline-block;
+    box-sizing: border-box;
     padding: 14px 28px 14px 57px;
     background: #525151 url('../img/icon-letter.svg') 22px 50% no-repeat;
     border-left: 1px dotted #5b5b5b;
@@ -28,6 +29,7 @@
         text-decoration: none;
         color: #cccccc;
     @media (max-width: $breakpoint-small-max)
+        min-width: 48px;
         order: 6;
         background-position: 50% 50%;
         background-size: 18px 14px;
@@ -36,7 +38,9 @@
         height: 47px;
         span 
             display: none;
-
+    @media (max-width: $breakpoint-xsmall-max)
+        display: none;
+    
 .header__space
     order: 3;
     width: 100%;
@@ -65,7 +69,7 @@
 
 .header__search
     order: 4;
-    width: 285px;
+    min-width: 285px;
     box-sizing: border-box;
     margin-right: 5px;
     border: 1px solid #5c5b5b;
@@ -94,10 +98,11 @@
         display: inline-block;
 
 .contrast-version
-    min-width: 48px;
+    min-width: 256px;
     order: 7;
     white-space: nowrap;
     display: inline-block;
+    box-sizing: border-box;
     padding: 14px 26px 14px 58px;
     background: #363636 url('../img/icon-eye.svg') 18px 50% no-repeat;
     background-size: 32px 21px;
@@ -113,6 +118,7 @@
 
 .contrast-version--header 
     @media (max-width: $breakpoint-small-max)
+        min-width: 48px;
         background-size: 25px 17px;
         background-position: 50% 50%;
         padding: 0;
@@ -120,6 +126,8 @@
         height: 47px;
         span 
             display: none;
+    @media (max-width: $breakpoint-xsmall-max)
+        display: none;
 
 .header-menu
     @media (max-width: $breakpoint-small-max)
@@ -167,6 +175,8 @@
         padding: 0 9px;
     @media (max-width: $breakpoint-small-max)
         display: flex;
+    @media (max-width: $breakpoint-xsmall-max)
+        display: none;
 
 .small-menu
     display: none;
