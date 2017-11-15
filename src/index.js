@@ -14,8 +14,6 @@ import './js/main.js'
 //import '../index.html'
 
 
-
-
 if (window.matchMedia("(max-width: 960px)").matches) {
 
     // Контроль высоты uk-sticky-placeholder для блока меню
@@ -29,14 +27,17 @@ if (window.matchMedia("(max-width: 960px)").matches) {
 
     searchButton.addEventListener("click", function() {
         searchButton.classList.toggle("search-small-opened")
-        document.querySelector(".header__reception").style.display = "none"
-        document.querySelector(".contrast-version--header").style.display = "none"
-        document.querySelector(".small-menu").style.display = "none"
-        document.querySelector(".header-logo-small").style.display = "none"
-        document.querySelector(".header__space").style.display = "none"
-        document.querySelector(".header__search").style.display = "block"
-        document.querySelector(".header__search").toggle("header__search-opened")
+   //     if (searchButton.classList.contains("search-small-opened")) {
+            document.querySelector(".header__reception").classList.toggle("hide")
+            document.querySelector(".contrast-version--header").classList.toggle("hide")
+            document.querySelector(".small-menu").classList.toggle("hide")
+            document.querySelector(".header-logo-small").classList.toggle("hide")
+            document.querySelector(".header__space").classList.toggle("hide")
+            document.querySelector(".voice-search").classList.toggle("hide")
+            document.querySelector(".header__search").classList.toggle("header__search-opened")
+     //   } else {
+            
+        
     })
-
 
 }   
