@@ -11,7 +11,7 @@ import './sass/main.sass'
 /* import scripts */
 import './js/main.js'
 
-//import '../index.html'
+
 
 
 if (window.matchMedia("(max-width: 960px)").matches) {
@@ -27,7 +27,6 @@ if (window.matchMedia("(max-width: 960px)").matches) {
 
     searchButton.addEventListener("click", function() {
         searchButton.classList.toggle("search-small-opened")
-   //     if (searchButton.classList.contains("search-small-opened")) {
             document.querySelector(".header__reception").classList.toggle("hide")
             document.querySelector(".contrast-version--header").classList.toggle("hide")
             document.querySelector(".small-menu").classList.toggle("hide")
@@ -35,9 +34,6 @@ if (window.matchMedia("(max-width: 960px)").matches) {
             document.querySelector(".header__space").classList.toggle("hide")
             document.querySelector(".voice-search").classList.toggle("hide")
             document.querySelector(".header__search").classList.toggle("header__search-opened")
-     //   } else {
-            
-        
     })
 
 }   

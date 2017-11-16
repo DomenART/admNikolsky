@@ -1,0 +1,62 @@
+h2
+    margin: 100px 0 30px
+    color: #0d0d0d
+    font-size: 32px
+    font-weight: 700
+
+a 
+    color: #000000
+    text-decoration: underline
+    &:hover
+        color: #cc0000;
+        
+.innerpage-header 
+    margin-bottom: 10px
+    background: #a3794e url('../img/bg-innerpage.jpg') 50% 50% no-repeat;
+    background-size: cover;
+
+.sitetitle--innerpage 
+    margin: 0 auto
+
+.content-menu
+    margin-top: 50px;
+
+.breadcrumb
+    padding: 10px 0 17px
+    margin: 0 0 50px 0
+    border-bottom: 1px solid #f0f0f0
+    color: #666666;
+    font-size: 12px
+    li 
+        display: inline-block
+    a
+        padding-right: 16px
+        color: #666666
+        text-decoration: underline
+        position: relative
+        &:hover 
+            color: #000000;
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            width: 12px
+            height: 12px
+            background: url('../img/icon-arrow-right.jpg') 50% 50% no-repeat
+            background-size: 12px 5px
+    span
+        color: #000000;
+
+.pagetitle
+    margin-bottom: 60px
+    background-color: #999
+    color: #373736
+    font-size: 48px
+    font-weight: 900
+    span 
+        display: inline-block
+        background-color: #fff
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 30px

@@ -54,40 +54,17 @@
                 </div>
             </nav>
         </header>
-        <main class="homepage-main">
-            <div class="home-slider">
-                <div class="home-slider__content" uk-slideshow="animation: push">
-                    <div class="uk-position-relative" uk-visible-toggle uk-light>
-                        <ul class="uk-slideshow-items home-slider__images">
-                            <li>
-                                <img src="img/home-slide-1.jpg" alt="" uk-cover>
-                            </li>
-                            <li>
-                                <img src="img/home-slide-2.jpg" alt="" uk-cover>
-                            </li>
-                            <li>
-                                <img src="img/home-slide-3.jpg" alt="" uk-cover>
-                            </li>
-                        </ul>
+        <header class="innerpage-header">
+            <div class="uk-container">
+                <div class="sitetitle sitetitle--innerpage">
+                    <div class="sitetitle__logo uk-flex uk-flex-center">
+                        <img src="img/logo.png" alt="">
                     </div>
-                    <ul class="home-slider__dotnav uk-dotnav uk-flex-center uk-margin">
-                        <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
-                        <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
-                        <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
-                    </ul>
+                    <div class="sitetitle__text">
+                        <span>Никольское сельское поселение</span><br>
+                        Новоусманского района Воронежской области
+                    </div>
                 </div>
-            </div>
-            <div class="sitetitle sitetitle--homepage">
-                <div class="sitetitle__logo uk-flex uk-flex-center">
-                    <img src="img/logo.png" alt="">
-                </div>
-                <div class="sitetitle__text">
-                    <span>Никольское сельское поселение</span><br>
-                    Новоусманского района Воронежской области
-                </div>
-            </div>
-            <div class="homepage-content">
-                <div class="uk-container">
                     <nav class="content-menu uk-grid uk-grid-small">
                         <div class="uk-width-3-4@m">
                             <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
@@ -112,174 +89,140 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="homepage-first-section">
-                        <div class="uk-grid-small" uk-grid>
-                            <div class="uk-width-1-2@m">
-                                <section class="homepage-news">
-                                    <header class="homepage-news__header uk-flex uk-flex-middle uk-flex-between">
-                                        <div class="homepage-news__title">последние новости</div>
-                                        <div>
-                                        <a href="#" class="button-more button-more--light">читать все<span uk-icon="icon: arrow-right"></span></a>
+                </div>
+            </div>
+        </header>
+        <main class="contacts">
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-small">
+                    <div class="uk-width-3-4@m">
+                        <ul class="breadcrumb">
+                            <li><a href="">Главная</a></li>
+                            <li><span href="">Контакты</span></li>
+                        </ul>
+                        <div class="pagetitle"><span>Контакты</span></div>
+                        <div uk-grid class="uk-grid-small uk-child-width-1-2@m" uk-height-match="target: .contacts-item__title">
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Глава Никольского сельского поселения
                                     </div>
-                                    </header>
-                                    <article class="homepage-news-item">
-                                        <div class="uk-grid">
-                                            <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
-                                                <div class="homepage-news-item__date uk-flex">
-                                                    <span>30</span>
-                                                    <div>
-                                                        октябрь<br>
-                                                        2017
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-4-5@s uk-width-1-1@m uk-width-4-5@l">
-                                                <a href="#" class="homepage-news-item__title">Название - заголовок  последней новости, краткий анонс, может быть в две - три - четыре - пять и более строк, но слишком длинный не желательно...</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
-                                            <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
-                                                <div class="homepage-news-item__date uk-flex">
-                                                    <span>28</span>
-                                                    <div>
-                                                        октябрь<br>
-                                                        2017
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-4-5@s uk-width-1-1@m uk-width-4-5@l">
-                                                <a href="#" class="homepage-news-item__title">Название - заголовок  последней новости, краткий анонс, может быть в две - три - четыре - пять и более строк, но слишком длинный не желательно...</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
-                                            <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
-                                                <div class="homepage-news-item__date uk-flex">
-                                                    <span>15</span>
-                                                    <div>
-                                                        октябрь<br>
-                                                        2017
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-4-5@s uk-width-1-1@m uk-width-4-5@l">
-                                                <a href="#" class="homepage-news-item__title">Название - заголовок  последней новости, краткий анонс, может быть в две - три - четыре - пять и более строк, но слишком длинный не желательно...</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
-                                            <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
-                                                <div class="homepage-news-item__date uk-flex">
-                                                    <span>19</span>
-                                                    <div>
-                                                        октябрь<br>
-                                                        2017
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-4-5@s uk-width-1-1@m uk-width-4-5@l">
-                                                <a href="#" class="homepage-news-item__title">Название - заголовок  последней новости, краткий анонс, может быть в две - три - четыре - пять и более строк, но слишком длинный не желательно...</a>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <span class="homepage-mark">НОВОСТИ</span>
-                                </section>
-                            </div>
-                            <div class="uk-width-1-2@m">
-                                <div class="uk-grid-small uk-margin-small" uk-grid uk-height-match="target: .js-holidays-and-schedule">
-                                    <div class="uk-width-1-2@s">
-                                        <a href="#" class="homepage-holiday js-holidays-and-schedule">
-                                            <span class="homepage-holiday__header">
-                                                Мы празднуем:
-                                            </span>
-                                            <span class="homepage-holiday__title">
-                                                День села - название отмечаемого события
-                                            </span>
-                                            <span class="homepage-holiday__intro">
-                                                Уважаемые жители и гости Никольского сельского поселения! Приглашаем Вас на празднование Дня села...
-                                            </span>
-                                            <span class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></span>
-                                        </a>
-                                    </div>
-                                    <div class="uk-width-1-2@s">
-                                        <article class="homepage-schedule js-holidays-and-schedule">
-                                            <header class="homepage-schedule__header">
-                                                График приёма граждан:
-                                            </header> 
-                                            <div class="homepage-schedule__text">
-                                                <div class="uk-flex uk-flex-between uk-flex-wrap">
-                                                    <span>Пн-Чт:</span> с 08.00 до 16.00
-                                                </div>
-                                                <div class="uk-flex uk-flex-between uk-flex-wrap">
-                                                    <span>Перерыв:</span>  с 12.00 до 13.00
-                                                </div>
-                                                <div class="homepage-schedule__untendable">
-                                                    <span>Чт:</span> неприемный день
-                                                </div>
-                                                
-                                            </div>
-                                        </article>
+                                    <div class="contacts-item__text">
+                                        <div class="contacts-item__important">Полухин Н. И.</div>
+                                        телефон: 8 (47341) 5-11-30 <br>
+                                        e-mail: nikolsk.nusm@govvrn.ru<br>
+                                         дни приема: Пн., Чт. <br>
+                                        часы приема: 8:00-16:00
                                     </div>
                                 </div>
-                                <a href="#" class="homepage-month-event" style="background: url('img/month-event.jpg') 50% 50% no-repeat; background-size: cover;">
-                                    <span class="homepage-month-event__header uk-flex uk-flex-between uk-flex-middle">
-                                        <span class="homepage-month-event__title">Событие месяца</span>
-                                        <span>
-                                            <span class="button-more button-more--light">подробнее<span uk-icon="icon: arrow-right"></span></span>
-                                        </span>
-                                    </span>
-                                    <span href="#" class="homepage-month-event__pagetitle">
-                                        Заголовок события месяца. Фоновая картинка- выводится из новости, обращать внимание, чтобы нижняя часть была темной, тк текст белый
-                                    </span>
-                                </a>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title contacts-item__title--map">
+                                        Мы на карте:
+                                    </div>
+                                    <div class="contacts-item__map">
+                                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A454097cd864202253d916298a632326a08c53419de0753ae8ce9345ad3997537&amp;width=479&amp;height=246&amp;lang=ru_RU&amp;scroll=true"></script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Приемная
+                                    </div>
+                                    <div class="contacts-item__text">
+                                        телефон: 8 (47341) 5-11-30 <br>
+                                        e-mail: nikolsk.nusm@govvrn.ru<br>
+                                         дни приема: Пн. <br>
+                                        часы приема: 8:00-16:00
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Реквизиты
+                                    </div>
+                                    <div class="contacts-item__text">
+                                        Р/с <br>
+                                         Отделение по Воронежской области Главного управления Центрального банка Российской Федерации по Центральному федеральному округу (Отделение Воронеж) <br>
+                                        БИК - <br>
+                                         ИНН -  <br>
+                                        КПП -  <br>
+                                        ОГРН - <br> 
+                                        ОКПО - <br>
+                                         ОКТМО - 
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Юридический адрес
+                                    </div>
+                                    <div class="contacts-item__text">
+                                        Полный юридический адрес администрации Никольского сельского поселения
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Фактический адрес
+                                    </div>
+                                    <div class="contacts-item__text">
+                                        Полный фактический адрес администрации Никольского сельского поселения
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="contacts-item">
+                                    <div class="contacts-item__title">
+                                        Написать письмо в электронном виде
+                                    </div>
+                                    <div class="contacts-item__text">
+                                        Для того, чтобы отправить электронное обращение, перейдите в <a href="#">интернет-приемную</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="homepage-second-section">
-                        <div class="uk-grid-small" uk-grid>
-                            <div class="uk-width-3-4@m">
-                                <div class="border-block"></div>
-                                <div class="border-block"></div>
-                                <div class="border-block"></div>
-                                <article class="home-page-greetings">
-                                    <div class=" uk-grid-small" uk-grid>
-                                        <div class="uk-width-1-3@s">
-                                            <div class="home-page-greetings__photo">
-                                                <img src="img/photo.jpg" alt="">
-                                            </div>
+                    <div class="uk-width-1-4@l">
+                        <div uk-grid class="uk-grid-small">
+                            <div>
+                                <article class="homepage-schedule js-holidays-and-schedule">
+                                    <header class="homepage-schedule__header">
+                                        График приёма граждан:
+                                    </header> 
+                                    <div class="homepage-schedule__text">
+                                        <div class="uk-flex uk-flex-between uk-flex-wrap">
+                                            <span>Пн-Чт:</span> с 08.00 до 16.00
                                         </div>
-                                        <div class="uk-width-2-3@s">
-                                            <div class="home-page-greetings__text">
-                                                <p>
-                                                    Дорогие друзья!
-                                                </p>
-                                                <p>
-                                                    Приветствую  вас на официальном сайте Никольского сельского поселения Новоусманского муниципального района Воронежской области. Я рад, что теперь в мировом информационном пространстве отражена жизнь нашего муниципального образования.
-                                                </p>
-                                                <p>
-                                                    Время показало правильность курса на открытость власти и расширение диалога с населением по проблемам, которые волнуют каждого из нас.  Мы настроены на искренний и конструктивный диалог с жителями. Хочу вас заверить, что власть всегда открыта  для обмена мнениями и предложениями.
-                                                </p>
-                                                <p>
-                                                    Масловский – поселок  энергичных, целеустремлённых и талантливых людей. Вместе мы сможем не только улучшить настоящее, но и обеспечить достойное будущее. Мы рады всем гостям сайта и надеемся, что информация, размещенная на сайте, станет доступна всем, кому не безразлична судьба нашего поселения, кто искренне заинтересован в его дальнейшем развитии и процветании.
-                                                </p>
-                                                <p>
-                                                    Уверен, что наше общение будет полезным! Желаю Вам удачи, достижения целей и позитивных планов!
-                                                </p>
-                                                <p>  
-                                                    С уважением,<br>
-                                                     Глава Никольскогосельского поселения <span>Полухин Н.И.</span>  
-                                                </p>
-                                            </div>
-                                            <a href="#" class="button-more button-more--light button-more--greetings">подробнее<span uk-icon="icon: arrow-right"></span></a>
+                                        <div class="uk-flex uk-flex-between uk-flex-wrap">
+                                            <span>Перерыв:</span>  с 12.00 до 13.00
+                                        </div>
+                                        <div class="homepage-schedule__untendable">
+                                            <span>Чт:</span> неприемный день
                                         </div>
                                     </div>
                                 </article>
                             </div>
-                            <div class="uk-width-1-4@m">
+                        </div>
+                        <div uk-grid class="uk-grid-small uk-child-width-1-2@m uk-child-width-1-1@l">
+                            <div>
+                                <a href="#" class="outer-link uk-flex-middle">
+                                    <span class="uk-flex uk-flex-middle">
+                                        <span class="outer-link__image">
+                                            <img src="img/zonirovanie.png" alt="">
+                                        </span>
+                                        <span class="outer-link__text">
+                                            Градостроительное зонирование
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link uk-flex-middle">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -290,6 +233,8 @@
                                         </span>
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link uk-flex-middle">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -300,6 +245,8 @@
                                         </span>
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link uk-flex-middle">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -310,6 +257,8 @@
                                         </span>
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link uk-flex-middle">
                                     <span class="uk-flex  uk-flex-middle">
                                         <span class="outer-link__image">
@@ -321,60 +270,7 @@
                                     </span>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="homepage-third-section">
-                        <div class="uk-grid-small" uk-grid>
-                            <div class="uk-width-1-2@m">
-                                <section class="homepage-documents">
-                                    <header class="homepage-documents__header uk-flex uk-flex-between uk-flex-middle">
-                                        <div class="homepage-documents__title">Документы</div>
-                                        <div>
-                                            <a href="#" class="button-more button-more--light">смотреть все</a>
-                                        </div>
-                                    </header>
-                                    <a href="#" class="document-item document-item--homepage">
-                                        Название - заголовок  информационного документа, который может быть интересен посетителю сайта
-                                    </a>
-                                    <a href="#" class="document-item document-item--homepage">
-                                        Название - заголовок  информационного документа, который может быть интересен посетителю сайта
-                                    </a>
-                                    <a href="#" class="document-item document-item--homepage">
-                                        Название - заголовок  информационного документа, который может быть интересен посетителю сайта
-                                    </a>
-                                    <a href="#" class="document-item document-item--homepage">
-                                        Название - заголовок  информационного документа, который может быть интересен посетителю сайта
-                                    </a>
-                                    <span class="homepage-mark homepage-mark--dark">Деятельность</span>
-                                </section>
-                                <a href="#" class="event" style="background: url('img/event.jpg') 50% 50% no-repeat; background-size: cover;">
-                                    <span class="event__header">
-                                        <span href="#" class="button-more button-more--light button-more--event">подробнее<span uk-icon="icon: arrow-right"></span></span>
-                                    </span>
-                                    <span href="#" class="event__title">
-                                        Заголовок события . Фоновая картинка- выводится из новости, обращать внимание, чтобы нижняя часть была темной, тк текст белый
-                                    </span>
-                                    <span class="event__mark homepage-mark">новости</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-2@s uk-width-1-4@m">
-                                <a href="#" class="homepage-map">
-                                    Карта поселения
-                                    <span class="homepage-map__mark homepage-mark">о поселении</span>
-                                </a>
-                                <a href="#" class="homepage-strategy">
-                                    Стратегия развития  сельского поселения
-                                    <span class="homepage-strategy__mark homepage-mark">о поселении</span>
-                                </a>
-                                <a href="#" class="homepage-effectivness">
-                                    Показатели эффективности
-                                    <span class="homepage-effectivness__mark homepage-mark">деятельность</span>
-                                </a>
-                            </div>
-                            <div class="uk-width-1-2@s uk-width-1-4@m">
-                                <a href="#" class="homepage-zoning">
-                                    Градостроительное зонирование
-                                </a>
+                            <div>
                                 <a href="#" class="outer-link">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -385,12 +281,16 @@
                                         </span>
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="homepage-stop-corruption uk-flex-middle">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="homepage-stop-corruption__sign">!</span>
                                         <span>Сообщите о факте коррупции</span>  
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -401,6 +301,8 @@
                                         </span>
                                     </span>
                                 </a>
+                            </div>
+                            <div>
                                 <a href="#" class="outer-link">
                                     <span class="uk-flex uk-flex-middle">
                                         <span class="outer-link__image">
@@ -412,12 +314,11 @@
                                     </span>
                                 </a>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-    
         <footer class="footer">
             <div class="border-block"></div>
             <div class="border-block"></div>

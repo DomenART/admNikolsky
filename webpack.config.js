@@ -79,6 +79,21 @@ module.exports = {
             filename: 'index.html',
             chunks: ['index'],
             template: PATHS.source + '../index.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contacts.html',
+            chunks: ['contacts'],
+            template: PATHS.source + '../contacts.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'government.html',
+            chunks: ['government'],
+            template: PATHS.source + '../government.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'appeals.html',
+            chunks: ['appeals'],
+            template: PATHS.source + '../appeals.html'
         })
     ]
 
