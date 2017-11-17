@@ -94,6 +94,11 @@ module.exports = {
             filename: 'appeals.html',
             chunks: ['appeals'],
             template: PATHS.source + '../appeals.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'gallery.html',
+            chunks: ['gallery'],
+            template: PATHS.source + '../gallery.html'
         })
     ]
 

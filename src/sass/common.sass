@@ -11,19 +11,41 @@ a
         color: #cc0000;
         
 .innerpage-header 
-    margin-bottom: 10px
+    margin-bottom: 5px
     background: #a3794e url('../img/bg-innerpage.jpg') 50% 50% no-repeat;
     background-size: cover;
 
-.sitetitle--innerpage 
-    margin: 0 auto
+.innerpage-sitetitle
+    margin: 31px auto 51px
+
+.innerpage-sitetitle__logo
+    margin-bottom: 10px
+    img 
+        width: 69px
+        height: 86px
+
+.innerpage-sitetitle__text
+    text-align: center
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.55)
+    color: #ffffff
+    font-size: 30px
+    font-weight: 900
+    letter-spacing: 0.75px
+    line-height: 1
+    span
+        line-height: 1.4
+        text-transform: uppercase
+    @media (max-width: $breakpoint-medium-max)
+        font-size: 24px  
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 18px 
 
 .content-menu
     margin-top: 50px;
 
 .breadcrumb
     padding: 10px 0 17px
-    margin: 0 0 50px 0
+    margin: 0 0 30px 0
     border-bottom: 1px solid #f0f0f0
     color: #666666;
     font-size: 12px
@@ -50,13 +72,16 @@ a
         color: #000000;
 
 .pagetitle
-    margin-bottom: 60px
+    margin-bottom: 40px
     background-color: #999
     color: #373736
     font-size: 48px
     font-weight: 900
+    line-height: 1
+    background: #fff url('../img/dot-small.svg') 50% 50% repeat
     span 
         display: inline-block
+        padding-right: 13px
         background-color: #fff
     @media (max-width: $breakpoint-xsmall-max)
         font-size: 30px

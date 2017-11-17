@@ -13,13 +13,14 @@
             background-color: #018ab8
     a
         display: block
-        padding: 25px 0 12px 30px
+        padding: 20px 0 3px 20px
         border-bottom: 1px dotted #36add3
         color: #ffffff
         font-size: 16px
         font-weight: 900
         line-height: 1.5
         text-transform: uppercase
+        text-decoration: none
         &:hover
             text-decoration: none
         span  
@@ -36,11 +37,11 @@
 
 .government-documents
     box-sizing: border-box
-    padding: 47px 34px 77px 20px
+    padding: 40px 34px 77px 20px
     background-color: #3f90c4
 
 .government-documents__title
-    margin-bottom: 50px
+    margin-bottom: 40px
     padding-left: 13px
     color: #e2e2e2
     font-size: 22px
@@ -48,5 +49,26 @@
     text-transform: uppercase
     letter-spacing: 0.6px
 
+.government-documents-item
+    display: block
+    margin-bottom: 17px
+    padding-left: 37px
+    padding-bottom: 15px
+    border-bottom: 1px dotted #5ca7cd
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11)
+    background: url('../img/icon-doc-gray.svg') 0% 6% no-repeat
+    color: #cccccc
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.375
+    text-decoration: underline
+    &:hover
+        color: #ffffff
+        background-image: url('../img/icon-doc-white.svg')
+    &:last-of-type
+        margin-bottom: 40px
+        @media (max-width: $breakpoint-xsmall-max)
+            margin-bottom: 10px
+
 .government__text
-    margin-bottom: 50px
+    margin: 37px 0 50px

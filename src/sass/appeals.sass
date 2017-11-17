@@ -20,7 +20,7 @@
 
 .appeals-order
     margin-bottom: 10px
-    padding: 52px 42px 32px
+    padding: 62px 42px 12px
     background: #707075 url('../img/appeals-order.jpg') 50% 50% no-repeat
     @include appeals-tile-item
     
@@ -42,20 +42,16 @@
         text-decoration: none
 
 .appeals-info
-    padding: 132px 324px 89px 41px
+    padding: 138px 41px 70px 41px
     background: #9ba5ad url('../img/appeals-info.jpg') 50% 50% no-repeat
     @include appeals-tile-item
-    @media (max-width: $breakpoint-xsmall-max)
-        padding-right: 89px
-    @media (max-width: $breakpoint-xsmall-max)
-        padding-right: 41px
 
 .appeals-info__title
     @include appeals-tile-title($margin: 28px)
 
 .appeals-reception
     margin-bottom: 10px
-    padding: 52px 26px 32px 41px
+    padding: 62px 26px 12px 41px
     background: #0089b3 url('../img/appeals-reception.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
@@ -64,7 +60,7 @@
 
 .appeals-schedule
     margin-bottom: 10px
-    padding: 32px 26px 32px 41px
+    padding: 42px 26px 10px 41px
     background: #f0ac48 url('../img/appeals-schedule.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
@@ -72,12 +68,13 @@
     @include appeals-tile-title($margin: 19px)
 
 .appeals-day
-    padding: 12px 26px 21px 41px
+    padding: 13px 26px 9px 41px
     background: #a40c11 url('../img/appeals-day.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
 .appeals-day__title
-    @include appeals-tile-title($margin: 14px)
+    @include appeals-tile-title($margin: 5px)
+    line-height: 1
 
 .appeals-day__date
     display: block
@@ -92,4 +89,4 @@
         font-size: 42px
 
 .appeals-text
-    margin: 50px 0
+    margin-top: 45px

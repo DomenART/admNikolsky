@@ -1,0 +1,57 @@
+.gallery-container
+    margin-left: -10px;
+
+.gallery-small-item
+    display: flex
+    width: 33.33%;
+    height: 320px
+    box-sizing: border-box
+    float: left
+    margin-left: -10px
+    margin-bottom: 10px
+    padding: 130px 10px 31px 41px 
+    background-color: #f4f4f4
+    text-decoration: none
+    &:hover
+        text-decoration: none
+        background: #dcdcdc url('../img/gradient.png') 50% 50% no-repeat
+        .gallery-small-item__title
+            color: #666666
+        .gallery-small-item__count
+            background-color: #eeeaea;
+        .gallery-small-item__section
+            background-color: #eeeaea;
+    &::before 
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100px;
+
+.gallery-small-item__title
+    color: #999999
+    font-size: 24px
+    font-weight: 900
+    letter-spacing: 0.6px
+
+.gallery-small-item__count
+    width: 122px
+    box-sizing: border-box
+    padding: 3px 6px 4px 9px
+    background-color: #e2e2e2
+    color: #666666
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+.gallery-small-item__section
+    width: 135px
+    box-sizing: border-box
+    padding: 3px 5px 4px 5px
+    background-color: #e2e2e2
+    color: #666666
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+.gallery-gradient
+   

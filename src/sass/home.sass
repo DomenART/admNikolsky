@@ -38,13 +38,13 @@
     @media (max-width: $breakpoint-xsmall-max)
         width: 236px
 
-.sitetitle--homepage
+.homepage-sitetitle
     position: absolute
     top: 0
     left: 50%
     transform: translateX(-50%)
 
-.sitetitle__logo
+.homepage-sitetitle__logo
     padding-top: 75px
     padding-bottom: 10px
     @media (max-width: $breakpoint-medium-max)
@@ -60,7 +60,7 @@
             width: 45px
             height: 56px
 
-.sitetitle__text
+.homepage-sitetitle__text
     text-align: center
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.55)
     color: #ffffff
@@ -351,15 +351,18 @@
 .homepage-second-section
     margin-bottom: 22px !important
 
-.border-block
-    height: 5px
-    border-top: 1px dotted #e8e7e7
+.dot-block
+    height: 20px
+    background: #ffffff url(../img/dot-small.svg) 50% 50% repeat
+
+.dot-block-small
+    height: 10px
+    background: #ffffff url(../img/dot-small.svg) 50% 50% repeat
 
 .home-page-greetings
     padding-top: 5px
     padding-bottom: 27px
-    border-bottom: 1px dotted #e8e7e7
-
+        
 .home-page-greetings__text
     padding-right: 24px
     line-height: 1.35
@@ -448,8 +451,7 @@
 .document-item
     display: block
     margin-bottom: 30px
-    
-    padding-left: 47px
+    padding-left: 39px
     padding-bottom: 41px
     border-bottom: 1px dotted #5ca7cd
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.11)
