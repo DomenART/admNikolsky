@@ -99,6 +99,16 @@ module.exports = {
             filename: 'gallery.html',
             chunks: ['gallery'],
             template: PATHS.source + '../gallery.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'reports.html',
+            chunks: ['reports'],
+            template: PATHS.source + '../reports.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'article.html',
+            chunks: ['article'],
+            template: PATHS.source + '../article.html'
         })
     ]
 
