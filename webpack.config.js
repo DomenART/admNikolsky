@@ -1,9 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const version = require('./package.json').version;
 const env = process.env.WEBPACK_ENV;
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const PATHS = {
     source: path.join(__dirname, 'src/'),
@@ -22,26 +20,25 @@ module.exports = {
     module: {
         rules: [{
             test: /\.js$/,
-            // exclude: /(node_modules|bower_components)/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['es2015']
-                }
-            }
-        },{
+            exclude: /(node_modules|bower_components)/,
+            loader: 'babel-loader'
+        }, {
             test: /\.s[a|c]ss$/,
-            use: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: [{
-                    loader: "css-loader",
-                    options: {
-                        minimize: env === 'production' ? true : false
-                    }
-                }, {
-                    loader: "sass-loader"
-                }]
-            })
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].css'
+                }
+            }, {
+                loader: 'extract-loader'
+            }, {
+                loader: "css-loader",
+                options: {
+                    minimize: env === 'production' ? true : false
+                }
+            }, {
+                loader: "sass-loader"
+            }]
         }, {
             test: /\.(png|jpg|gif|svg)$/,
             use: [{
@@ -60,11 +57,22 @@ module.exports = {
                     outputPath: 'fonts/'
                 }
             }]
+        }, {
+            test: /\.html$/,
+            use: [{
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
+            }, {
+                loader: 'extract-loader'
+            }, {
+                loader: 'html-loader'
+            }]
         }]
     },
 
     plugins: [
-        new ExtractTextPlugin('[name].css'),
         new webpack.optimize.UglifyJsPlugin({
             minimize: env === 'production' ? true : false
         }),
@@ -74,46 +82,6 @@ module.exports = {
             'process.env': {
                 NODE_ENV: '"production"'
             }
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            chunks: ['index'],
-            template: PATHS.source + '../index.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'contacts.html',
-            chunks: ['contacts'],
-            template: PATHS.source + '../contacts.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'government.html',
-            chunks: ['government'],
-            template: PATHS.source + '../government.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'appeals.html',
-            chunks: ['appeals'],
-            template: PATHS.source + '../appeals.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'gallery.html',
-            chunks: ['gallery'],
-            template: PATHS.source + '../gallery.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'reports.html',
-            chunks: ['reports'],
-            template: PATHS.source + '../reports.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'article.html',
-            chunks: ['article'],
-            template: PATHS.source + '../article.html'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'category.html',
-            chunks: ['category'],
-            template: PATHS.source + '../category.html'
         })
     ]
 
