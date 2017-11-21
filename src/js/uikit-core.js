@@ -14,7 +14,7 @@ import HeightMatch from 'uikit/src/js/core/height-match';
 // import Icon from 'uikit/src/js/core/icon';
 // import Leader from 'uikit/src/js/core/leader';
 import Margin from 'uikit/src/js/core/margin';
-// import Modal from 'uikit/src/js/core/modal';
+import Modal from 'uikit/src/js/core/modal';
 // import Nav from 'uikit/src/js/core/nav';
 // import Navbar from 'uikit/src/js/core/navbar';
 // import Offcanvas from 'uikit/src/js/core/offcanvas';
@@ -26,7 +26,7 @@ import Margin from 'uikit/src/js/core/margin';
 // import Svg from 'uikit/src/js/core/svg';
 // import Switcher from 'uikit/src/js/core/switcher';
 // import Tab from 'uikit/src/js/core/tab';
-// import Toggle from 'uikit/src/js/core/toggle';
+import Toggle from 'uikit/src/js/core/toggle';
 // import Video from 'uikit/src/js/core/video';
 
 
@@ -70,7 +70,7 @@ export default function (UIkit) {
     // UIkit.use(Gif);
     UIkit.use(Grid);
     // UIkit.use(Leader);
-    // UIkit.use(Modal);
+    UIkit.use(Modal);
     // UIkit.use(Nav);
     // UIkit.use(Navbar);
     // UIkit.use(Offcanvas);

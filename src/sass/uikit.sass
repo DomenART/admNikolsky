@@ -17,10 +17,12 @@ $base-body-font-family: 'Lato', sans-serif
 $base-body-font-size: 18px
 $base-body-font-weight: 500
 $base-line-height: 1.35
-$global-color: #000
+$base-body-color: #000000
+$base-link-color: #000000
+$base-link-hover-color: #cc0000
+$base-link-text-decoration: underline
 
 @mixin hook-base-h1
-	margin: 0
 	color: #373736
 	font-family: "Lato"
 	font-size: 48px
@@ -28,26 +30,33 @@ $global-color: #000
 	line-height: 48px
 
 @mixin hook-base-h2
+	margin-top: 80px
+	margin-bottom: 30px
 	font-family: "Lato"
-	margin: 60px 0 30px
-    color: #0d0d0d
-    font-size: 32px
-    font-weight: 700
+	font-size: 32px
+	font-weight: 700
+	letter-spacing: 0.3px
+	color: #0d0d0d
 
 @mixin hook-base-h3
 	font-family: "Lato"
-	margin: 60px 0 30px
-    color: #0d0d0d
-    font-size: 28px
-    font-weight: 700
+	margin-top: 80px
+	margin-bottom: 30px
+	color: #0d0d0d
+	font-size: 28px
+	font-weight: 700
+	letter-spacing: 0.3px
 
 @mixin hook-base-h4
 	font-family: "Lato"
-	margin: 60px 0 30px
-    color: #000000
-    font-size: 24px
-    font-weight: 700
-    padding-left: 60px
+	margin-top: 60px
+	margin-bottom: 30px
+	color: #000000
+	font-size: 24px
+	font-weight: 700
+	padding-left: 60px
+	@media (max-width: $breakpoint-xsmall-max)
+		padding-left: 0
 
 @mixin hook-base-h5
 	font-family: "Lato"
@@ -60,7 +69,7 @@ $global-color: #000
 	background-color: #f8f8f8
 	color: #333333
 	font-size: 20px
-	font-weight: 400
+	font-weight: 700
 	line-height: 1.2
 	@media (max-width: $breakpoint-large-max)
 		position: static
@@ -70,10 +79,12 @@ $global-color: #000
 	font-family: "Lato"
 	width: 250px
 	box-sizing: border-box
-	padding: 73px 47px 82px 42px
+	padding: 68px 40px 80px 36px
 	position: absolute
 	right: -303px
 	border: 3px solid #e5e5e5
+	font-weight: 700
+	line-height: 1.33
 	@media (max-width: $breakpoint-large-max) 
 		position: static
 		width: 100%
@@ -109,7 +120,7 @@ $global-color: #000
 // @import "../../node_modules/uikit/src/scss/components/card.scss"
 
 // Common
-// @import "../../node_modules/uikit/src/scss/components/close.scss" // After: Icon
+@import "../../node_modules/uikit/src/scss/components/close.scss" // After: Icon
 // @import "../../node_modules/uikit/src/scss/components/spinner.scss" // After: Icon
 // @import "../../node_modules/uikit/src/scss/components/totop.scss" // After: Icon
 // @import "../../node_modules/uikit/src/scss/components/marker.scss" // After: Icon
@@ -136,7 +147,7 @@ $global-color: #000
 // @import "../../node_modules/uikit/src/scss/components/accordion.scss"
 // @import "../../node_modules/uikit/src/scss/components/drop.scss" // After: Card
 // @import "../../node_modules/uikit/src/scss/components/dropdown.scss" // After: Card
-// @import "../../node_modules/uikit/src/scss/components/modal.scss" // After: Close
+@import "../../node_modules/uikit/src/scss/components/modal.scss" // After: Close
 // @import "../../node_modules/uikit/src/scss/components/lightbox.scss" // After: Close
 @import "../../node_modules/uikit/src/scss/components/slideshow.scss"
 // @import "../../node_modules/uikit/src/scss/components/sticky.scss"

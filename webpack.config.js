@@ -109,6 +109,11 @@ module.exports = {
             filename: 'article.html',
             chunks: ['article'],
             template: PATHS.source + '../article.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'category.html',
+            chunks: ['category'],
+            template: PATHS.source + '../category.html'
         })
     ]
 

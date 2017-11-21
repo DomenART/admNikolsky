@@ -45,6 +45,8 @@
     padding: 138px 41px 70px 41px
     background: #9ba5ad url('../img/appeals-info.jpg') 50% 50% no-repeat
     @include appeals-tile-item
+    @media (max-width: $breakpoint-xsmall-max)
+       padding: 50px 41px 50px 41px
 
 .appeals-info__title
     @include appeals-tile-title($margin: 28px)

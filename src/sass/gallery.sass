@@ -5,7 +5,6 @@
     margin-left: -10px
 
 .gallery-large-item
-    width: 66.66%
     box-sizing: border-box
     float: left
     padding-left: 10px
@@ -13,6 +12,9 @@
     .gallery-item__section
         margin-right: 10px
         margin-left: 5px
+    .gallery-item__count
+        margin-right: 0
+    
     a 
         height: 650px
         box-sizing: border-box
@@ -21,11 +23,15 @@
         background-color: #f4f4f4
         text-decoration: none
         background: url('../img/gradient.png') 0% 0% no-repeat, url('../img/park-pobedy.jpg') 50% 50% no-repeat
+        background-size: auto, cover
         &:hover
             text-decoration: none
     &:hover
         .gallery-large-item__title
             color: #2674a6
+    @media (max-width: $breakpoint-xsmall-max)
+        a  
+            height: 320px
 
 .gallery-large-item__title
     color: #2674a6
@@ -43,9 +49,10 @@
     font-size: 14.5px
     font-weight: 500
     line-height: 1
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 10px
 
 .gallery-medium-item
-    width: 66.66%
     box-sizing: border-box
     float: left
     padding-left: 10px
@@ -62,6 +69,7 @@
         background-color: #f4f4f4
         text-decoration: none
         background: url('../img/gradient.png') 0% 0% no-repeat, url('../img/gallery-medium.jpg') 50% 50% no-repeat
+        background-size: auto, cover
         &:hover
             text-decoration: none
     &:hover
@@ -79,7 +87,6 @@
     padding-top: 25px
 
 .gallery-small-item
-    width: 33.33%
     box-sizing: border-box
     float: left
     padding-left: 10px
@@ -102,18 +109,25 @@
     letter-spacing: 0.6px
 
 .gallery-item__count
-    padding: 0 10px
-    background-color: #e2e2e2
-    color: #666666
-    font-size: 12px
-    font-weight: 400
-    text-transform: uppercase
-
-.gallery-item__section
-    padding: 0 10px
+    display: inline-block
+    padding: 0 8px
     background-color: #e2e2e2
     color: #666666
     font-size: 12px
     font-weight: 400
     text-transform: uppercase
     text-align: center
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 10px
+
+.gallery-item__section
+    display: inline-block
+    padding: 0 8px
+    background-color: #e2e2e2
+    color: #666666
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: center
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 10px
