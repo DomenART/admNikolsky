@@ -190,25 +190,88 @@
     min-height: 68px
     background-color: #eae8e8
     border-bottom: 1px solid #f3f3f3
-    ul
-        width: 100%
-        list-style-type: none
-        margin: 0
-        padding: 0
-        li
-            a
-                display: block
-                padding: 26px 19px 26px 19px
-                text-align: center
-                color: #333333
-                font-weight: 500
-                line-height: 1.1
-                text-transform: uppercase
-                letter-spacing: 0.18px
-                text-decoration: none   
-                &:hover
-                    background-color: #fbfbfb
+
+.header-menu__list
+    width: 100%
+    list-style-type: none
+    margin: 0
+    padding: 0
+    > li
+        position: relative
+        > a
+            display: block
+            padding: 26px 19px 26px 19px
+            text-align: center
+            color: #333333
+            font-weight: 500
+            line-height: 1.1
+            text-transform: uppercase
+            letter-spacing: 0.18px
+            text-decoration: none
+            &:hover
+                background-color: #fbfbfb
+                text-decoration: none
+        &.parent
+            > a
+                padding-right: 40px
+                position: relative
+                &::after
+                    content: ''
+                    width: 13px
+                    height: 10px
+                    background: url('../img/icon-chevron-down.svg') no-repeat 50% 50%
+                    position: absolute
+                    right: 20px
+                    top: 50%
+                    margin-top: -5px
+        &:hover
+            > a
+                background-color: #fbfbfb
+                text-decoration: none
+            > ul
+                visibility: visible
+                transform: scale(1) translateY(0)
+                opacity: 1
+        > ul
+            visibility: hidden
+            transform: scale(.8) translateY(-20%)
+            opacity: 0
+            transform-origin: 0 100%
+            transition: all .3s ease-in-out
+            position: absolute
+            left: 0
+            top: 100%
+            width: 253px
+            border: 1px solid #f3f3f3
+            background-color: #fbfbfb
+            padding: 0
+            margin: 0
+            list-style: none
+            > li
+                > a
+                    color: #666666
                     text-decoration: none
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 1
+                    display: block
+                    padding: 10px 20px
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        left: 10px
+                        right: 10px
+                        bottom: 0
+                        height: 0
+                        display: block
+                        border-top: 1px dotted #d3d5d4
+                    &:hover
+                        background-color: #eae7e7
+                        text-decoration: none
+                        color: #000000
+                &:last-child > a::after
+                    display: none
 
 .header-logo-small
     min-width: 190px
