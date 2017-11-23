@@ -13,14 +13,14 @@
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
                     <a href="#" class="small-menu"></a>
-                    <a class="header-logo-small uk-flex uk-flex-middle">
+                    <a class="header-logo-small hide uk-flex uk-flex-middle">
                         <img src="../img/header-logo.png" alt="">
                         <span>Никольское сельское поселение</span>
                     </a>
                     <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
                     <span class="header__space"></span>
                     <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
-                    <a href="#" class="voice-search hide">Или воспользуйтесь голосовым поиском</a>
+                    <a href="#" class="voice-search hide"><span>Или воспользуйтесь голосовым поиском</span></a>
                     <a href="#" class="search-small"></a>
                     <a href="#" class="contrast-version contrast-version--header js-contrast-header"><span>Версия для слабовидящих</span></a>
                 </div>
@@ -33,7 +33,7 @@
                                 <img src="../img/header-logo.png" alt="">
                             </a>
                         </div>
-                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between">
+                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between" uk-height-match="target: > li > a">
                             <li class="parent">
                                 <a href="#">О поселении</a>
                                 <ul>
@@ -101,7 +101,7 @@
             <div class="homepage-content">
                 <div class="uk-container">
                     <nav class="content-menu uk-grid uk-grid-small">
-                        <div class="uk-width-3-4@m">
+                        <div class="uk-width-3-4@m uk-width-1-1@l uk-width-3-4@xl">
                             <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
                                 <div>
                                     <a href="#"><span>НОВОСТИ</span></a>
@@ -119,7 +119,7 @@
                                     <a href="#">Муниципальные <span>ЗАКУПКИ</span></a>
                                 </div>
                                 <div>
-                                    <a href="#">Муниципальные <span>СЛУЖБА</span></a>
+                                    <a href="#">Муниципальная <span>СЛУЖБА</span></a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                     </div>
                                     </header>
                                     <article class="homepage-news-item">
-                                        <div class="uk-grid">
+                                        <div class="uk-grid uk-grid-large">
                                             <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
                                                 <div class="homepage-news-item__date uk-flex">
                                                     <span>30</span>
@@ -151,7 +151,7 @@
                                         </div>
                                     </article>
                                     <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
+                                        <div class="uk-grid uk-grid-large">
                                             <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
                                                 <div class="homepage-news-item__date uk-flex">
                                                     <span>28</span>
@@ -167,7 +167,7 @@
                                         </div>
                                     </article>
                                     <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
+                                        <div class="uk-grid uk-grid-large">
                                             <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
                                                 <div class="homepage-news-item__date uk-flex">
                                                     <span>15</span>
@@ -183,7 +183,7 @@
                                         </div>
                                     </article>
                                     <article class="homepage-news-item">
-                                        <div class="uk-grid uk-grid-small">
+                                        <div class="uk-grid uk-grid-large">
                                             <div class="uk-width-1-5@s uk-width-1-1@m uk-width-1-5@l">
                                                 <div class="homepage-news-item__date uk-flex">
                                                     <span>19</span>
@@ -254,40 +254,36 @@
                         <div class="uk-grid-small" uk-grid>
                             <div class="uk-width-3-4@m">
                                 <div class="dot-block"></div>
-                                <article class="home-page-greetings">
-                                    <div class=" uk-grid-small" uk-grid>
-                                        <div class="uk-width-1-3@s">
-                                            <div class="home-page-greetings__photo">
-                                                <img src="../img/photo.jpg" alt="">
+                                <article class="homepage-greetings">
+                                            <img src="../img/photo.jpg" class="homepage-greetings__image" alt="">
+                                            <div class="homepage-greetings__text-content">
+                                                <div class="homepage-greetings__text">
+                                                    <p>
+                                                        Дорогие друзья!
+                                                    </p>
+                                                    <p>
+                                                        Приветствую  вас на официальном сайте Никольского сельского поселения Новоусманского муниципального района Воронежской области. Я рад, что теперь в мировом информационном пространстве отражена жизнь нашего муниципального образования.
+                                                    </p>
+                                                    <p>
+                                                        Время показало правильность курса на открытость власти и расширение диалога с населением по проблемам, которые волнуют каждого из нас. Мы настроены на искренний и конструктивный диалог с жителями. Хочу вас заверить, что власть всегда открыта  для обмена мнениями и предложениями.
+                                                    </p>
+                                                    <p>
+                                                        Масловский – поселок  энергичных, целеустремлённых и талантливых людей. Вместе мы сможем не только улучшить настоящее, но и обеспечить достойное будущее. Мы рады всем гостям сайта и надеемся, что информация, размещенная на сайте, станет доступна всем, кому не безразлична судьба нашего поселения, кто искренне заинтересован в его дальнейшем развитии и процветании.
+                                                    </p>
+                                                    <p>
+                                                        Уверен, что наше общение будет полезным!Желаю Вам удачи, достижения целей и позитивных планов!
+                                                    </p>
+                                                    <p>
+                                                        С уважением,<br>
+                                                        Глава Никольскогосельского поселения <span>Полухин Н.И.</span>
+                                                    </p>
+                                                </div>
+                                                <a href="#" class="button-more button-more--light button-more--greetings">подробнее<span uk-icon="icon: arrow-right"></span></a>
                                             </div>
-                                        </div>
-                                        <div class="uk-width-2-3@s">
-                                            <div class="home-page-greetings__text">
-                                                <p>
-                                                    Дорогие друзья!
-                                                </p>
-                                                <p>
-                                                    Приветствую  вас на официальном сайте Никольского сельского поселения Новоусманского муниципального района Воронежской области. Я рад, что теперь в мировом информационном пространстве отражена жизнь нашего муниципального образования.
-                                                </p>
-                                                <p>
-                                                    Время показало правильность курса на открытость власти и расширение диалога с населением по проблемам, которые волнуют каждого из нас. Мы настроены на искренний и конструктивный диалог с жителями. Хочу вас заверить, что власть всегда открыта  для обмена мнениями и предложениями.
-                                                </p>
-                                                <p>
-                                                    Масловский – поселок  энергичных, целеустремлённых и талантливых людей. Вместе мы сможем не только улучшить настоящее, но и обеспечить достойное будущее. Мы рады всем гостям сайта и надеемся, что информация, размещенная на сайте, станет доступна всем, кому не безразлична судьба нашего поселения, кто искренне заинтересован в его дальнейшем развитии и процветании.
-                                                </p>
-                                                <p>
-                                                    Уверен, что наше общение будет полезным!Желаю Вам удачи, достижения целей и позитивных планов!
-                                                </p>
-                                                <p>
-                                                    С уважением,<br>
-                                                    Глава Никольскогосельского поселения <span>Полухин Н.И.</span>
-                                                </p>
-                                            </div>
-                                            <a href="#" class="button-more button-more--light button-more--greetings">подробнее<span uk-icon="icon: arrow-right"></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="dot-block-small"></div>
+                                            
+                                    
                                 </article>
+                                <div class="dot-block-small"></div>
                             </div>
                             <div class="uk-width-1-4@m">
                                 <a href="#" class="outer-link uk-flex-middle">
@@ -432,7 +428,7 @@
             <div class="footer__background">
                 <nav class="footer__nav">
                     <div class="uk-container">
-                        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-4@l">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@l">
                             <div>
                                 <div class="footer-owner">
                                     <div class="footer-owner__logo">
@@ -598,15 +594,16 @@
                 </nav>
                 <div class="footer-bar">
                     <div class="uk-container">
-                        <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
-                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                        <div class="footer-bar__container">
                                 <img src="../img/counter.png" class="footer-bar__counter" alt="">
-                                <a href="#" class="footer-bar__sitemap">Карта сайта</a>
-                                <a href="#" class="footer-bar__date">Открытые данные</a>
+                                <div class="uk-flex uk-flex-middle">
+                                    <a href="#" class="footer-bar__sitemap">Карта сайта</a>
+                                    <a href="#" class="footer-bar__date">Открытые данные</a>
+                                </div>
+                                <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
+                                    Разработка <span>сайта</span>
+                                </a>
                             </div>
-                            <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
-                                Разработка  сайта
-                            </a>
                         </div>
                     </div>
                 </div>
