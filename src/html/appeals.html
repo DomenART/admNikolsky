@@ -13,14 +13,14 @@
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
                     <a href="#" class="small-menu"></a>
-                    <a class="header-logo-small uk-flex uk-flex-middle">
+                    <a class="header-logo-small hide uk-flex uk-flex-middle">
                         <img src="../img/header-logo.png" alt="">
                         <span>Никольское сельское поселение</span>
                     </a>
                     <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
                     <span class="header__space"></span>
                     <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
-                    <a href="#" class="voice-search hide">Или воспользуйтесь голосовым поиском</a>
+                    <a href="#" class="voice-search hide"><span>Или воспользуйтесь голосовым поиском</span></a>
                     <a href="#" class="search-small"></a>
                     <a href="#" class="contrast-version contrast-version--header js-contrast-header"><span>Версия для слабовидящих</span></a>
                 </div>
@@ -33,12 +33,24 @@
                                 <img src="../img/header-logo.png" alt="">
                             </a>
                         </div>
-                        <ul class="uk-flex uk-flex-middle uk-flex-between">
-                            <li>
+                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between" uk-height-match="target: > li > a">
+                            <li class="parent">
                                 <a href="#">О поселении</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li> 
-                            <li> 
-                                <a href="#">Орган местного самоуправления</a>
+                            <li class="parent"> 
+                                <a href="#">Орган местного<br> самоуправления</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li>
                             <li> 
                                 <a href="#">Деятельность</a>
@@ -66,8 +78,8 @@
                     </div>
                 </div>
                 <nav class="content-menu uk-grid uk-grid-small">
-                    <div class="uk-width-3-4@l">
-                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
+                    <div class="uk-width-3-4@m uk-width-1-1@l uk-width-3-4@xl">
+                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small" uk-grid uk-height-match="target: a">
                             <div>
                                 <a href="#"><span>НОВОСТИ</span></a>
                             </div>
@@ -93,13 +105,13 @@
         </header>
         <main class="appeals">
             <div class="uk-container">
-                <ul class="breadcrumb">
-                    <li><a href="">Главная</a></li>
-                    <li><span href="">Обращения граждан</span></li>
-                </ul>
                 <div uk-grid class="uk-grid-small">
                     <div class="uk-width-3-4@l">
-                        <div class="pagetitle"><span>Обращения граждан</span></div>
+                        <ul class="breadcrumb">
+                            <li><a href="">Главная</a></li>
+                            <li><span>Обращения граждан</span></li>
+                        </ul>
+                        <div class="pagetitle pagetitle--appeals"><span>Обращения граждан</span></div>
                         <div uk-grid class="appeals-tile uk-grid-small">
                             <div class="uk-width-2-3@s">
                                 <div>
@@ -146,7 +158,7 @@
                             <p>Текстовый блок о том, для чего и кого эта страница. Если его нет, то вместо него прсто белый фон.</p>
                             <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими <a href="#">безорфографичный образ (link)</a> жизни.</p>
                             <h2>Заголовок 2 Bold 32 #000000</h2>
-                            <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс (hover link) предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь.</p>
+                            <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. <a href="#">Великий Оксмокс (hover link)</a> предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь.</p>
                             <p>ил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка.</p> 
                             <p>Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель рекламных текстов, напоивший его языком и речью и заманивший в свое агенство,</p>
                         </div>
@@ -267,7 +279,7 @@
             <div class="footer__background">
                 <nav class="footer__nav">
                     <div class="uk-container">
-                        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-4@l">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@l">
                             <div>
                                 <div class="footer-owner">
                                     <div class="footer-owner__logo">
@@ -433,19 +445,21 @@
                 </nav>
                 <div class="footer-bar">
                     <div class="uk-container">
-                        <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
-                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                        <div class="footer-bar__container">
                                 <img src="../img/counter.png" class="footer-bar__counter" alt="">
-                                <a href="#" class="footer-bar__sitemap">Карта сайта</a>
-                                <a href="#" class="footer-bar__date">Открытые данные</a>
+                                <div class="uk-flex uk-flex-middle">
+                                    <a href="#" class="footer-bar__sitemap">Карта сайта</a>
+                                    <a href="#" class="footer-bar__date">Открытые данные</a>
+                                </div>
+                                <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
+                                    Разработка <span>сайта</span>
+                                </a>
                             </div>
-                            <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
-                                Разработка  сайта
-                            </a>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
         <script src="main.js"></script>
         <a href="#" class="to-top" uk-scroll="duration: 500"></a>
     </body>

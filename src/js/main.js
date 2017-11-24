@@ -24,20 +24,37 @@ if (window.matchMedia("(max-width: 960px)").matches) {
 
     // Переключение панели поиска
     let searchButton = document.querySelector(".search-small")
+    let reception = document.querySelector(".header__reception")
+    let contrast = document.querySelector(".contrast-version--header")
+    let menuSmall = document.querySelector(".small-menu")
+    let space = document.querySelector(".header__space")
+    let voice = document.querySelector(".voice-search")
+    let search = document.querySelector(".header__search")
+    let logoSmall = document.querySelector(".header-logo-small")
 
-    searchButton.addEventListener("click", function () {
+    searchButton.onclick = function() {
         searchButton.classList.toggle("search-small-opened")
-        document.querySelector(".header__reception").classList.toggle("hide")
-        document.querySelector(".contrast-version--header").classList.toggle("hide")
-        document.querySelector(".small-menu").classList.toggle("hide")
-        document.querySelector(".header__space").classList.toggle("hide")
-        document.querySelector(".voice-search").classList.toggle("hide")
-        document.querySelector(".header__search").classList.toggle("header__search-opened")
-    })
+        reception.classList.toggle("hide")
+        contrast.classList.toggle("hide")
+        menuSmall.classList.toggle("hide")
+        space.classList.toggle("hide")
+        voice.classList.toggle("hide")
+        search.classList.toggle("header__search-opened")
+        if ((window.pageYOffset > 0) && (!this.classList.contains("search-small-opened"))) {
+            logoSmall.classList.remove("hide")
+        } else {
+            logoSmall.classList.add("hide")
+        }
+    }
 
     // Проявление логотипа при прокрутке меню
     window.onscroll = function() {
-        window.pageYOffset > 0 ? document.querySelector(".header-logo-small").classList.remove("hide") : document.querySelector(".header-logo-small").classList.add("hide")
+        if ((window.pageYOffset > 0) && (!searchButton.classList.contains("search-small-opened"))) {
+            logoSmall.classList.remove("hide")
+        } 
+        else {
+            logoSmall.classList.add("hide")
+        }
     }
    
 }   

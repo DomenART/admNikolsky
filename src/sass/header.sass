@@ -29,6 +29,7 @@
     font-size: 14px
     line-height: 1.5
     text-decoration: none   
+    transition: 0.5s
     &:hover
         background-color: #333333
         text-decoration: none
@@ -137,6 +138,7 @@
     height: 100%
     order: 5
     background: #666666 url('../img/icon-search-light.svg') 50% 50% no-repeat
+    cursor: pointer
     @media (max-width: $breakpoint-small-max)
         display: inline-block
 
@@ -160,6 +162,7 @@
     font-size: 14px
     line-height: 1.3
     text-decoration: none   
+    transition: 0.5s
     &:hover
         background-color: #000000
         text-decoration: none
@@ -201,7 +204,7 @@
 .header-menu__list
     width: 100%
     list-style-type: none
-    margin: 0 20px 0 0
+    margin: 0
     padding: 0
     > li
         position: relative
@@ -304,8 +307,6 @@
         text-decoration: none
     @media (max-width: $breakpoint-small-max)
         display: flex
-    @media (max-width: $breakpoint-xsmall-max)
-        display: none
 
 .small-menu
     display: none

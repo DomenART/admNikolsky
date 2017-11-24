@@ -13,14 +13,14 @@
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
                     <a href="#" class="small-menu"></a>
-                    <a class="header-logo-small uk-flex uk-flex-middle">
+                    <a class="header-logo-small hide uk-flex uk-flex-middle">
                         <img src="../img/header-logo.png" alt="">
                         <span>Никольское сельское поселение</span>
                     </a>
                     <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
                     <span class="header__space"></span>
                     <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
-                    <a href="#" class="voice-search hide">Или воспользуйтесь голосовым поиском</a>
+                    <a href="#" class="voice-search hide"><span>Или воспользуйтесь голосовым поиском</span></a>
                     <a href="#" class="search-small"></a>
                     <a href="#" class="contrast-version contrast-version--header js-contrast-header"><span>Версия для слабовидящих</span></a>
                 </div>
@@ -33,12 +33,24 @@
                                 <img src="../img/header-logo.png" alt="">
                             </a>
                         </div>
-                        <ul class="uk-flex uk-flex-middle uk-flex-between">
-                            <li>
+                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between" uk-height-match="target: > li > a">
+                            <li class="parent">
                                 <a href="#">О поселении</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li> 
-                            <li> 
-                                <a href="#">Орган местного самоуправления</a>
+                            <li class="parent"> 
+                                <a href="#">Орган местного<br> самоуправления</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li>
                             <li> 
                                 <a href="#">Деятельность</a>
@@ -66,8 +78,8 @@
                     </div>
                 </div>
                 <nav class="content-menu uk-grid uk-grid-small">
-                    <div class="uk-width-3-4@l">
-                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
+                    <div class="uk-width-3-4@m uk-width-1-1@l uk-width-3-4@xl">
+                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small" uk-grid uk-height-match="target: a">
                             <div>
                                 <a href="#"><span>НОВОСТИ</span></a>
                             </div>
@@ -97,11 +109,12 @@
                     <div class="uk-width-3-4@l">
                         <ul class="breadcrumb">
                             <li><a href="">Главная</a></li>
-                            <li><span href="">Галерея</span></li>
+                            <li><a href="">О поселении</a></li>
+                            <li><span>Галерея</span></li>
                         </ul>
-                        <div class="pagetitle"><span>Галерея</span></div>
+                        <div class="pagetitle pagetitle--gallery"><span>Галерея</span></div>
                         <div class="gallery-pool">
-                            <div class="gallery-large-item uk-width-2-3@s">
+                            <div class="gallery-large-item uk-width-2-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="uk-flex uk-flex-between uk-flex-middle">
                                         <span class="gallery-large-item__title">Парк победы</span>
@@ -113,7 +126,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Название категории</span>
                                     <span class="uk-flex uk-flex-between">
@@ -122,16 +135,16 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-special-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
-                                    <span class="gallery-small-item__title">Название категории</span>
+                                    <span class="gallery-small-special-item__title">Территория развития</span>
                                     <span class="uk-flex uk-flex-between">
                                         <span class="gallery-item__count">Фотографий: 12</span>
-                                        <span class="gallery-item__section">Название раздела</span>
+                                        <span class="gallery-item__section">Деятельность</span>
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-medium-item uk-width-2-3@s">
+                            <div class="gallery-medium-item uk-width-2-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="uk-flex uk-flex-right">
                                         <span class="gallery-item__all">смотреть все</span>
@@ -145,7 +158,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Название категории</span>
                                     <span class="uk-flex uk-flex-between">
@@ -154,7 +167,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Название категории</span>
                                     <span class="uk-flex uk-flex-between">
@@ -163,7 +176,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Название категории</span>
                                     <span class="uk-flex uk-flex-between">
@@ -172,7 +185,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Название категории</span>
                                     <span class="uk-flex uk-flex-between">
@@ -181,7 +194,7 @@
                                     </span>
                                 </a>
                             </div>
-                            <div class="gallery-small-item uk-width-1-3@s">
+                            <div class="gallery-small-item uk-width-1-2@s uk-width-1-3@m">
                                 <a href="#" class="uk-flex uk-flex-between uk-flex-column">
                                     <span class="gallery-small-item__title">Братская могила</span>
                                     <span class="uk-flex uk-flex-between">
@@ -328,7 +341,7 @@
             <div class="footer__background">
                 <nav class="footer__nav">
                     <div class="uk-container">
-                        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-4@l">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@l">
                             <div>
                                 <div class="footer-owner">
                                     <div class="footer-owner__logo">
@@ -494,19 +507,21 @@
                 </nav>
                 <div class="footer-bar">
                     <div class="uk-container">
-                        <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
-                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                        <div class="footer-bar__container">
                                 <img src="../img/counter.png" class="footer-bar__counter" alt="">
-                                <a href="#" class="footer-bar__sitemap">Карта сайта</a>
-                                <a href="#" class="footer-bar__date">Открытые данные</a>
+                                <div class="uk-flex uk-flex-middle">
+                                    <a href="#" class="footer-bar__sitemap">Карта сайта</a>
+                                    <a href="#" class="footer-bar__date">Открытые данные</a>
+                                </div>
+                                <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
+                                    Разработка <span>сайта</span>
+                                </a>
                             </div>
-                            <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
-                                Разработка  сайта
-                            </a>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
         <script src="main.js"></script>
         <a href="#" class="to-top" uk-scroll="duration: 500"></a>
     </body>

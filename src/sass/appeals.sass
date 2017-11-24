@@ -18,23 +18,28 @@
     &:hover
         text-decoration: none
 
+.appeals__aside
+    margin-top: 40px
+    
+.pagetitle--appeals
+    margin: 40px 0 75px
+
 .appeals-order
     margin-bottom: 10px
-    padding: 62px 42px 12px
+    padding: 45px 42px 30px
     background: #707075 url('../img/appeals-order.jpg') 50% 50% no-repeat
     @include appeals-tile-item
     
-
 .appeals-order__title
-    @include appeals-tile-title($margin: 28px)
+    @include appeals-tile-title($margin: 24px)
     
 .appeals-tile__more
-    padding: 3px 5px 4px 8px
+    padding: 2px 0px 2px 8px
     background-color: #e2e2e2
-    border-radius: 5px
+    border-radius: 4px
     color: #666666;
     font-size: 12px
-    font-weight: 400
+    font-weight: 500
     text-transform: uppercase
     &:hover
         color: #ffffff
@@ -42,45 +47,45 @@
         text-decoration: none
 
 .appeals-info
-    padding: 138px 41px 70px 41px
+    padding: 128px 41px 90px 41px
     background: #9ba5ad url('../img/appeals-info.jpg') 50% 50% no-repeat
     @include appeals-tile-item
     @media (max-width: $breakpoint-xsmall-max)
        padding: 50px 41px 50px 41px
 
 .appeals-info__title
-    @include appeals-tile-title($margin: 28px)
+    @include appeals-tile-title($margin: 20px)
 
 .appeals-reception
     margin-bottom: 10px
-    padding: 62px 26px 12px 41px
+    padding: 45px 26px 30px 41px
     background: #0089b3 url('../img/appeals-reception.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
 .appeals-reception__title
-    @include appeals-tile-title($margin: 28px)
+    @include appeals-tile-title($margin: 25px)
 
 .appeals-schedule
     margin-bottom: 10px
-    padding: 42px 26px 10px 41px
+    padding: 25px 26px 30px 41px
     background: #f0ac48 url('../img/appeals-schedule.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
 .appeals-schedule__title
-    @include appeals-tile-title($margin: 19px)
+    @include appeals-tile-title($margin: 15px)
 
 .appeals-day
-    padding: 13px 26px 9px 41px
+    padding: 7px 26px 20px 40px
     background: #a40c11 url('../img/appeals-day.jpg') 50% 50% no-repeat
     @include appeals-tile-item
 
 .appeals-day__title
-    @include appeals-tile-title($margin: 5px)
+    @include appeals-tile-title($margin: 10px)
     line-height: 1
 
 .appeals-day__date
     display: block
-    margin-bottom: 10px
+    margin-bottom: 2px
     line-height: 1
     color: #ffffff
     font-size: 14px

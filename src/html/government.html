@@ -13,14 +13,14 @@
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
                     <a href="#" class="small-menu"></a>
-                    <a class="header-logo-small uk-flex uk-flex-middle">
+                    <a class="header-logo-small hide uk-flex uk-flex-middle">
                         <img src="../img/header-logo.png" alt="">
                         <span>Никольское сельское поселение</span>
                     </a>
                     <a href="#" class="header__reception"><span>Интернет-приемная</span></a>
                     <span class="header__space"></span>
                     <input type="search" placeholder="Поиск по сайту" class="uk-input header__search">
-                    <a href="#" class="voice-search hide">Или воспользуйтесь голосовым поиском</a>
+                    <a href="#" class="voice-search hide"><span>Или воспользуйтесь голосовым поиском</span></a>
                     <a href="#" class="search-small"></a>
                     <a href="#" class="contrast-version contrast-version--header js-contrast-header"><span>Версия для слабовидящих</span></a>
                 </div>
@@ -33,12 +33,24 @@
                                 <img src="../img/header-logo.png" alt="">
                             </a>
                         </div>
-                        <ul class="uk-flex uk-flex-middle uk-flex-between">
-                            <li>
+                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between" uk-height-match="target: > li > a">
+                            <li class="parent">
                                 <a href="#">О поселении</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li> 
-                            <li> 
-                                <a href="#">Орган местного самоуправления</a>
+                            <li class="parent"> 
+                                <a href="#">Орган местного<br> самоуправления</a>
+                                <ul>
+                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                </ul>
                             </li>
                             <li> 
                                 <a href="#">Деятельность</a>
@@ -66,8 +78,8 @@
                     </div>
                 </div>
                 <nav class="content-menu uk-grid uk-grid-small">
-                    <div class="uk-width-3-4@l">
-                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small uk-grid" uk-grid uk-height-match="target: a">
+                    <div class="uk-width-3-4@m uk-width-1-1@l uk-width-3-4@xl">
+                        <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-6@l uk-grid-small" uk-grid uk-height-match="target: a">
                             <div>
                                 <a href="#"><span>НОВОСТИ</span></a>
                             </div>
@@ -94,12 +106,12 @@
         <main class="government">
             <div class="uk-container">
                 <div uk-grid class="uk-grid-small">
-                    <div class="uk-width-3-4@m">
+                    <div class="uk-width-3-4@l">
                         <ul class="breadcrumb">
                             <li><a href="">Главная</a></li>
                             <li><span href="">Орган местного самоуправления</span></li>
                         </ul>
-                        <div class="pagetitle"><span>Орган местного<br>самоуправления</span></div>
+                        <div class="pagetitle pagetitle--government"><span>Орган местного<br>самоуправления</span></div>
                         <div class="uk-grid uk-grid-small">
                             <div class="uk-width-2-3@l">
                                 <div class="government__text">
@@ -121,7 +133,7 @@
                             <div class="uk-width-1-3@l">
                                 <div uk-grid class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-1@l" uk-height-match="target: .js-government-info-and-documents">
                                     <div>
-                                        <ul class="government-info js-government-info-and-documents">
+                                        <ul class="government-links js-government-info-and-documents">
                                             <li><a href="#"><span>Глава сельского поселения</span></a></li>
                                             <li><a href="#"><span>Структура администрации</span></a></li>
                                             <li><a href="#"><span>Совет народных депутатов</span></a></li>
@@ -162,28 +174,28 @@
                             </div>    
                         </div>
                     </div>
-                    <div class="uk-width-1-4@m">
-                        <div uk-grid class="uk-grid-small">
+                    <aside class="uk-width-1-4@l">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-1@l">
                             <div>
-                                <div class="homepage-schedule js-holidays-and-schedule">
-                                    <header class="homepage-schedule__header">
+                                <div class="schedule">
+                                    <div class="schedule__header">
                                         График приёма граждан:
-                                    </header> 
-                                    <div class="homepage-schedule__text">
+                                    </div> 
+                                    <div class="schedule__text">
                                         <div class="uk-flex uk-flex-between uk-flex-wrap">
                                             <span>Пн-Чт:</span> с 08.00 до 16.00
                                         </div>
                                         <div class="uk-flex uk-flex-between uk-flex-wrap">
                                             <span>Перерыв:</span>  с 12.00 до 13.00
                                         </div>
-                                        <div class="homepage-schedule__untendable">
+                                        <div class="schedule__untendable">
                                             <span>Чт:</span> неприемный день
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div uk-grid class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-1@m">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-1@l">
                             <div>
                                 <a href="#" class="outer-link uk-flex-middle">
                                     <span class="uk-flex uk-flex-middle">
@@ -289,7 +301,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </main>
@@ -298,7 +310,7 @@
             <div class="footer__background">
                 <nav class="footer__nav">
                     <div class="uk-container">
-                        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-4@l">
+                        <div uk-grid class="uk-grid-small uk-child-width-1-3@s uk-child-width-1-4@l">
                             <div>
                                 <div class="footer-owner">
                                     <div class="footer-owner__logo">
@@ -464,19 +476,21 @@
                 </nav>
                 <div class="footer-bar">
                     <div class="uk-container">
-                        <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
-                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                        <div class="footer-bar__container">
                                 <img src="../img/counter.png" class="footer-bar__counter" alt="">
-                                <a href="#" class="footer-bar__sitemap">Карта сайта</a>
-                                <a href="#" class="footer-bar__date">Открытые данные</a>
+                                <div class="uk-flex uk-flex-middle">
+                                    <a href="#" class="footer-bar__sitemap">Карта сайта</a>
+                                    <a href="#" class="footer-bar__date">Открытые данные</a>
+                                </div>
+                                <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
+                                    Разработка <span>сайта</span>
+                                </a>
                             </div>
-                            <a href="#" class="footer-bar__developers uk-flex uk-flex-middle">
-                                Разработка  сайта
-                            </a>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
         <script src="main.js"></script>
         <a href="#" class="to-top" uk-scroll="duration: 500"></a>
     </body>

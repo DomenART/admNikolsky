@@ -1,8 +1,11 @@
+.pagetitle--category
+    margin-bottom: 16px
+
 .category__count
-    margin: 20px 0 25px
+    margin-bottom: 20px
     color: #333333
     font-size: 16px
-    font-weight: 400
+    font-weight: 500
     line-height: 18px
     span
         font-weight: 700
@@ -11,7 +14,6 @@
     position: relative
     height: 420px
     cursor: pointer
-    transition-duration: 1s
     &:hover
         .photo-item__image
             width: 100%
@@ -87,9 +89,9 @@
 .modal-photo
     width: 1230px
     @media (max-width: $breakpoint-large-max)
-        width: 760px
-    @media (max-width: $breakpoint-small-max)
-        width: 320px
+        width: 75%
+    @media (max-width: $breakpoint-xsmall-max)
+        width: 100%
 
 .modal-photo__prev
     width: 60px
@@ -99,11 +101,17 @@
     top: 50%
     left: -80px
     transform: translateY(-50%)
-    background: #333333 url('../img/icon-chevron-left.svg') 50% 50% no-repeat
+    background: #333333 url('../img/icon-chevron-left-large.svg') 50% 50% no-repeat
     background-size: 18px 32px
     cursor: pointer
     &:hover
         background-color: #000000
+    @media (max-width: $breakpoint-xsmall-max)
+        width: 50px
+        height: 50px
+        left: 0
+        border-radius: 0
+        transform: translateY(-55px)
 
 .modal-photo__next
     width: 60px
@@ -113,18 +121,28 @@
     top: 50%
     right: -80px
     transform: translateY(-50%)
-    background: #333333 url('../img/icon-chevron-right.svg') 50% 50% no-repeat
+    background: #333333 url('../img/icon-chevron-right-large.svg') 50% 50% no-repeat
     background-size: 18px 32px
     cursor: pointer
     &:hover
         background-color: #000000
+    @media (max-width: $breakpoint-xsmall-max)
+        width: 50px
+        height: 50px
+        right: 0
+        border-radius: 0
+        transform: translateY(-55px)
 
 .modal-photo__image
     width: 100%
     height: 616px
+    @media (max-width: $breakpoint-small-max)
+        height: 320px
 
 .modal-photo__desc
     padding: 16px 39px 16px 30px
+    @media (max-width: $breakpoint-small-max)
+        padding: 16px 10px
 
 .modal-photo__counter
     margin-bottom: 55px
@@ -135,6 +153,8 @@
         font-size: 18px
         font-weight: 700
         color: #000000
+    @media (max-width: $breakpoint-small-max)
+        margin-bottom: 15px
 
 .modal-photo__date
     display: inline-block
@@ -146,6 +166,8 @@
     font-size: 12px
     font-weight: 400
     text-transform: uppercase
+    @media (max-width: $breakpoint-small-max)
+        margin-bottom: 10px
 
 .modal-photo__title
     margin-bottom: 37px
@@ -153,12 +175,17 @@
     font-size: 24px
     font-weight: 700
     line-height: 1.2
+    @media (max-width: $breakpoint-small-max)
+        font-size: 18px
+        margin-bottom: 10px
 
 .modal-photo__text
     color: #666666
     font-size: 16px
     font-weight: 400
     line-height: 1.5
+    @media (max-width: $breakpoint-small-max)
+        font-size: 14px
 
 .modal-photo__close
     border: 1px solid #c2c2c2
@@ -168,6 +195,9 @@
     &:hover
         border: 1px solid #404040;
         color: #000000
+    @media (max-width: $breakpoint-xsmall-max)
+        width: 50px
+        height: 50px
 
 .category__buttons
     height: 420px
@@ -177,8 +207,8 @@
     margin: 0 auto
     box-sizing: border-box
     display: inline-block
-    margin-bottom: 20px
-    padding: 34px 10px 38px
+    margin-bottom: 10px
+    padding: 28px 10px
     text-align: center
     border: 4px solid #83c3da
     background-color: #9ed6e7
@@ -198,7 +228,7 @@
     margin: 0 auto
     box-sizing: border-box
     display: inline-block
-    padding: 34px 10px 38px
+    padding: 28px 10px
     border: 4px solid #eaeaea
     background-color: #f2f2f2
     text-align: center

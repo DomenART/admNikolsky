@@ -12,7 +12,7 @@
     @media (max-width: $breakpoint-small-max)
         height: 593px !important
     @media (max-width: $breakpoint-xsmall-max)
-        height: 328px !important
+        height: 290px !important
 
 .home-slider__dotnav
     position: absolute
@@ -30,7 +30,7 @@
     @media (max-width: $breakpoint-medium-max)
         top: 235px
     @media (max-width: $breakpoint-xsmall-max)
-        top: 180px
+        top: 175px
 
 .homepage-sitetitle
     position: absolute
@@ -54,7 +54,8 @@
             width: 68px
             height: 85px 
     @media (max-width: $breakpoint-xsmall-max)
-        padding-top: 37px
+        padding-top: 40px
+        padding-bottom: 5px
         img
             width: 45px
             height: 56px
@@ -84,8 +85,10 @@
         margin-top: -233px
     @media (max-width: $breakpoint-medium-max)
         margin-top: -330px
+    @media (max-width: $breakpoint-small-max)
+        margin-top: -280px
     @media (max-width: $breakpoint-xsmall-max)
-        margin-top: -150px
+        margin-top: -70px
 
 .content-menu
     margin-bottom: 10px
@@ -110,6 +113,7 @@
     @media (max-width: $breakpoint-small-max)
         padding-right: 98px
     @media (max-width: $breakpoint-xsmall-max)
+        min-height: 73px
         padding-right: 0
 
 .homepage-first-section
@@ -139,12 +143,14 @@
     @media (max-width: $breakpoint-small-max)
         padding: 40px 35px 20px 40px
     @media (max-width: $breakpoint-xsmall-max)
-        padding: 47px 11px 10px 10px
+        padding: 45px 11px 10px 10px
 
 .homepage-news__header
     margin-bottom: 55px
     @media (max-width: $breakpoint-small-max)
         margin-bottom: 42px
+    @media (max-width: $breakpoint-xsmall-max)
+        margin-bottom: 25px
 
 .homepage-news__title
     color: #999999
@@ -153,6 +159,8 @@
     text-transform: uppercase
     letter-spacing: 0.6px
     line-height: 1.1
+    @media (max-width: $breakpoint-xsmall-max)
+        letter-spacing: 0
 
 .button-more
     display: inline-block
@@ -188,10 +196,15 @@
         margin-bottom: 15px
         @media (max-width: $breakpoint-small-max)
             margin-bottom: 30px
+        @media (max-width: $breakpoint-xsmall-max)
+            margin-bottom: 0
     @media (max-width: $breakpoint-small-max)
         margin-right: 0
         margin-bottom: 20px
         padding-bottom: 20px
+    @media (max-width: $breakpoint-xsmall-max)
+        margin-bottom: 3px;
+        padding-bottom: 15px;
 
 .homepage-news-item__date
     color: #128ebe
@@ -205,8 +218,14 @@
         font-weight: 900
         line-height: 1
         text-transform: uppercase
+        @media (max-width: $breakpoint-xsmall-max)
+            margin-right: 0
     div
         margin-top: 3px
+        @media (max-width: $breakpoint-xsmall-max)
+            margin-top: 7px
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 10px
 
 .homepage-news-item__title
     display: block
@@ -219,6 +238,10 @@
         color: #cc0000
     @media (max-width: $breakpoint-medium-max)
         padding-right: 0
+    @media (max-width: $breakpoint-xsmall-max)
+        font-weight: 500
+        line-height: 1.3
+        letter-spacing: -0.25px
 
 .homepage-mark
     padding: 2px 11px
@@ -231,7 +254,7 @@
 .homepage-mark--dark
     color: #d2d2d2
     background-color: #1374a2
-    
+
 .homepage-holiday 
     display: block
     box-sizing: border-box
@@ -246,6 +269,10 @@
             text-decoration: none
     @media (max-width: $breakpoint-small-max)
         padding-bottom: 70px
+        padding-right: 20px
+        padding-left: 38px
+    @media (max-width: $breakpoint-xsmall-max)
+        padding-bottom: 25px
 
 .homepage-holiday__header
     display: block
@@ -257,6 +284,8 @@
     @media (max-width: $breakpoint-small-max)
         margin-bottom: 28px
         letter-spacing: 0
+    @media (max-width: $breakpoint-xsmall-max)
+        margin-bottom: 25px
 
 .homepage-holiday__title
     display: block
@@ -269,6 +298,8 @@
     @media (max-width: $breakpoint-small-max)
         margin-bottom: 15px
         letter-spacing: -0.4px
+    @media (max-width: $breakpoint-xsmall-max)
+        margin-bottom: 6px
 
 .homepage-holiday__intro
     display: block
@@ -279,7 +310,9 @@
     line-height: 1.3
     letter-spacing: 0.08px
     @media (max-width: $breakpoint-medium-max)
-        padding-right: 0    
+        padding-right: 0 
+    @media (max-width: $breakpoint-xsmall-max)   
+        line-height: 1.15
 
 .homepage-holiday__more
     color: #666666
@@ -304,6 +337,8 @@
             width: 150px
         @media (max-width: $breakpoint-small-max)
             width: 224px
+    @media (max-width: $breakpoint-xsmall-max)
+        padding: 44px 40px 50px 35px
 
 .schedule__header
     margin-bottom: 63px
@@ -312,6 +347,9 @@
     font-weight: 900
     line-height: 24px
     letter-spacing: 0.6px
+    @media (max-width: $breakpoint-xsmall-max)
+        letter-spacing: -0.3px
+        margin-bottom: 50px
 
 .schedule__text
     padding-left: 5px
@@ -341,14 +379,12 @@
     &:hover
         text-decoration: none
     @media (max-width: $breakpoint-small-max)
-        height: 370px
         padding-bottom: 27px
         display: flex
         justify-content: space-between
         flex-direction: column
     @media (max-width: $breakpoint-xsmall-max)
-        height: 300px
-        padding: 24px 10px 32px
+        padding: 20px 8px 20px 16px
 
 .homepage-month-event__header
     margin-bottom: 99px
@@ -360,6 +396,11 @@
     text-transform: uppercase
     letter-spacing: 0.6px
     line-height: 1.2
+    @media (max-width: $breakpoint-small-max)
+        height: 370px
+    @media (max-width: $breakpoint-xsmall-max)
+        height: 300px
+        font-size: 20px
 
 .homepage-month-event__pagetitle
     display: block
@@ -374,7 +415,6 @@
     &:hover
         color: #ffffff
         text-decoration: none
-
 
 .homepage-second-section
     margin-bottom: 15px !important
@@ -406,11 +446,11 @@
 
 .homepage-greetings__text
     @media (max-width: $breakpoint-small-max)
-        height: 441px
+        height: 440px
         text-overflow: ellipsis
         overflow: hidden
     @media (max-width: $breakpoint-xsmall-max)
-        height: 241px
+        height: 240px
 
 .homepage-greetings__text-content
    overflow: hidden
@@ -422,6 +462,7 @@
         display: inline-block
     @media (max-width: $breakpoint-xsmall-max)
         margin-top: 18px
+        white-space: normal
 
 .outer-link   
     display: flex
@@ -460,7 +501,7 @@
         margin-bottom: 7px !important
 
 .homepage-documents
-    padding: 45px 40px 26px 41px
+    padding: 40px 40px 26px 41px
     background-color: #3f90c4
     margin-bottom: 10px
     background-color: #3f90c4
@@ -479,6 +520,12 @@
     @media (max-width: $breakpoint-xsmall-max)
         padding: 47px 10px 10px 10px
 
+.homepage-mark--activity
+    @media (max-width: $breakpoint-xsmall-max)
+        font-size: 11.5px
+        letter-spacing: -0.3px
+        padding: 2px 5px
+
 .homepage-documents__title
     color: #fefefe
     font-size: 24px
@@ -489,6 +536,8 @@
 
 .homepage-documents__header
     margin-bottom: 52px
+    @media (max-width: $breakpoint-xsmall-max)
+        margin-bottom: 41px
 
 .document-item
     display: block
@@ -513,11 +562,17 @@
     @media (max-width: $breakpoint-small-max)
         padding-left: 52px
         padding-bottom: 8px
+    @media (max-width: $breakpoint-xsmall-max)
+        padding-bottom: 10px
+        margin-bottom: 20px
     
 .document-item--homepage
     margin-right: 58px
     @media (max-width: $breakpoint-xsmall-max)
         margin-right: 0px  
+    &:last-of-type
+        @media (max-width: $breakpoint-xsmall-max)
+            margin-bottom: 5px
 
 .event 
     display: block
@@ -528,14 +583,12 @@
     &:hover
         text-decoration: none
     @media (max-width: $breakpoint-small-max)
-        height: 370px
         padding-bottom: 40px
         display: flex
         justify-content: space-between
         flex-direction: column
     @media (max-width: $breakpoint-xsmall-max)
-        height: 300px
-        padding: 37px 10px 32px 17px
+        padding: 35px 10px 32px 17px
         
 .event__header
     display: block
@@ -553,6 +606,12 @@
     &:hover
         color: #ffffff
         text-decoration: none
+    @media (max-width: $breakpoint-small-max)
+        height: 370px
+    @media (max-width: $breakpoint-xsmall-max)
+        height: 300px
+        font-size: 20px
+        
 
 .button-more--event
     font-size: 14px
@@ -575,6 +634,8 @@
     font-weight: 900
     word-wrap: break-word
     position: relative
+    @media (max-width: $breakpoint-xsmall-max)
+        min-height: 300px
 
 @mixin link-mark
     position: absolute
@@ -594,6 +655,9 @@
     &:hover
         color: #666666
         text-decoration: none
+    @media (max-width: $breakpoint-xsmall-max)
+        padding-top: 125px
+        letter-spacing: -0.3px
 
 .homepage-map__mark
     @include link-mark
@@ -612,6 +676,8 @@
     &:hover
         color: #fefefe
         text-decoration: none
+    @media (max-width: $breakpoint-xsmall-max)
+        line-height: 1.1
 
 .homepage-strategy__mark
     @include link-mark
@@ -628,6 +694,8 @@
     &:hover
         color: #666666
         text-decoration: none
+    @media (max-width: $breakpoint-xsmall-max)
+        padding-top: 115px
     
 .homepage-effectivness__mark
     @include link-mark
@@ -648,6 +716,9 @@
     &:hover
         color: #999999
         text-decoration: none
+    @media (max-width: $breakpoint-xsmall-max)
+        padding: 107px 30px 50px 25px
+        letter-spacing: -0.3px
 
 .homepage-stop-corruption
     display: flex
