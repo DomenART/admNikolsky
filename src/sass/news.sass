@@ -1,0 +1,133 @@
+.news-month
+    margin-right: 30px
+    margin-bottom: 42px
+    padding: 25px 65px 30px 0
+    background-color: #f8f8f8
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: -100%
+        top: 0
+        background-color: #f8f8f8
+        z-index: -100
+    @media (max-width: $breakpoint-small-max)
+        margin-right: 0
+        padding: 25px 25px 30px 0
+    @media (max-width: $breakpoint-xsmall-max)   
+        padding: 25px 0
+
+.news-month__heading
+    margin-bottom: 14px
+    color: #0d0d0d
+    font-size: 32px
+    font-weight: 700
+
+.news-month__image
+    width: 375px
+    margin-right: 28px
+
+.news-month__date
+    display: block
+    margin-top: -4px
+    margin-bottom: 15px
+    color: #ababab
+    font-size: 11px
+    line-height: 1
+    font-weight: 500
+    @media (max-width: $breakpoint-small-max)
+        margin-top: 20px
+
+.news-month__title
+    margin-bottom: 26px
+    color: #006699
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.6
+    letter-spacing: 0.45px
+
+.news-month__intro
+    margin-bottom: 15px
+    letter-spacing: -0.15px
+
+.news-item__image
+    width: 120px
+    margin-right: 21px
+
+.news-item
+    margin-bottom: 20px
+    text-decoration: none
+    &:hover
+        text-decoration: none
+        .news-item__title
+            color: #b50000
+
+.news-item__date
+    display: block
+    margin-bottom: 11px
+    color: #ababab
+    font-size: 11px
+    line-height: 1
+    font-weight: 500
+
+.news-item__title
+    color: #006699
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.4
+    text-decoration: underline
+
+.news-pagination
+    list-style-type: none
+    margin: 55px 0 0 0
+    padding: 3px 0
+    border-top: 1px solid #e7e7e7
+    border-bottom: 1px solid #e7e7e7
+    text-align: center
+    li
+        display: inline-block
+    a  
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 45px
+        min-height: 45px
+        text-decoration: none
+        text-align: center
+        border: 3px solid transparent
+        color: #7b7b7b
+        font-size: 18px
+        font-weight: 900
+        text-transform: uppercase
+        letter-spacing: 0.45px
+        &:hover
+            color: #7b7b7b
+            border-color: #e7e7e7
+    .news-pagination__active
+        a 
+            color: #fff
+            background-color: #0097cc
+            &:hover
+                border-color: transparent
+    .news-pagination__more
+        a
+            &:hover
+                border-color: transparent
+    .news-pagination__start,
+    .news-pagination__end,
+    .news-pagination__prev,
+    .news-pagination__next
+        a  
+            border-color: transparent
+
+    .news-pagination__start,
+    .news-pagination__prev
+        float: left
+
+    .news-pagination__end,
+        .news-pagination__next
+            float: right
+    @media (max-width: $breakpoint-medium-max)
+        margin-bottom: 20px

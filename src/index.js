@@ -12,6 +12,7 @@ import './html/gallery.html'
 import './html/government.html'
 import './html/index.html'
 import './html/reports.html'
+import './html/news.html'
 
 /* import styles */
 import './sass/main.sass'
