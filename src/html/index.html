@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
+        <div class="js-mobile-menu"></div>
         <header class="header" uk-sticky>
             <div class="header__bar">
                 <div class="header__bar-container uk-container uk-flex uk-flex-middle uk-flex-between">
-                    <a href="#" class="small-menu"></a>
+                    <a href="#mobile-menu" class="small-menu" uk-toggle="cls: mobile-menu--open" type="button"></a>
                     <a class="header-logo-small hide uk-flex uk-flex-middle">
                         <img src="../img/header-logo.png" alt="">
                         <span>Никольское сельское поселение</span>
@@ -33,33 +34,57 @@
                                 <img src="../img/header-logo.png" alt="">
                             </a>
                         </div>
-                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between" uk-height-match="target: > li > a">
-                            <li class="parent">
-                                <a href="#">О поселении</a>
+                        <ul class="header-menu__list uk-flex uk-flex-middle uk-flex-between js-menu">
+                            <li class="parent active">
+                                <a href="#1">О поселении</a>
                                 <ul>
-                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                    <li><a href="#2">Название пункта меню 2 уровня 1</a></li>
+                                    <li class="parent">
+                                        <a href="#3">Название пункта меню 2 уровня 2</a>
+                                        <ul>
+                                            <li class="parent">
+                                                <a href="#4">Название пункта меню 3 уровня 1</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#11">Название пункта меню 4 уровня 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#12">Название пункта меню 4 уровня 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#13">Название пункта меню 4 уровня 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#14">Название пункта меню 4 уровня 4</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#5">Название пункта меню 3 уровня 2</a></li>
+                                            <li><a href="#6">Название пункта меню 3 уровня 3</a></li>
+                                            <li><a href="#7">Название пункта меню 3 уровня 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#8">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#9">Название пункта меню 2 уровня 4</a></li>
                                 </ul>
                             </li> 
                             <li class="parent"> 
-                                <a href="#">Орган местного<br> самоуправления</a>
+                                <a href="#10">Орган местного<br> самоуправления</a>
                                 <ul>
-                                    <li><a href="#">Название пункта меню 2 уровня 1</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 2</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 3</a></li>
-                                    <li><a href="#">Название пункта меню 2 уровня 4</a></li>
+                                    <li><a href="#11">Название пункта меню 2 уровня 1</a></li>
+                                    <li><a href="#12">Название пункта меню 2 уровня 2</a></li>
+                                    <li><a href="#13">Название пункта меню 2 уровня 3</a></li>
+                                    <li><a href="#14">Название пункта меню 2 уровня 4</a></li>
                                 </ul>
                             </li>
                             <li> 
-                                <a href="#">Деятельность</a>
+                                <a href="#15">Деятельность</a>
                             </li>
                             <li>
-                                <a href="#">Обращения граждан</a>
+                                <a href="#16">Обращения граждан</a>
                             </li> 
                             <li>
-                                <a href="#">Контакты</a>
+                                <a href="#17">Контакты</a>
                             </li>
                         </ul>
                     </div>

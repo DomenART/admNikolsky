@@ -70,3 +70,232 @@
         background-color: #fff
     @media (max-width: $breakpoint-xsmall-max)
         font-size: 30px
+
+.mobile-menu
+    position: fixed
+    z-index: 1020
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4)
+    background-color: #eae8e8
+    left: 7px
+    top: 0
+    right: 0
+    visibility: hidden
+    transform: translateY(-100%)
+    opacity: 0
+    transition: all .3s ease
+    &--open
+        visibility: visible
+        transform: translateY(0)
+        opacity: 1
+
+.mobile-menu__head
+    min-height: 48px
+    max-height: 48px
+    background-color: #666666
+    padding: 0 58px
+    box-sizing: border-box
+    overflow: hidden
+    a
+        text-decoration: none
+        color: #cccccc
+        font-size: 18px
+        font-weight: 700
+        line-height: 1
+        text-transform: uppercase
+        letter-spacing: 0.18px
+        display: block
+        &:hover
+            text-decoration: none
+            color: #ffffff
+
+.mobile-menu__back
+    width: 48px
+    height: 48px
+    background-color: #fbfbfb
+    position: absolute
+    left: 0
+    top: 0
+    cursor: pointer
+    &::before,
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 15px
+        height: 2px
+        background-color: #676767
+        transform: translate(-50%, -50%)
+        transform-origin: 50% 50%
+    &::after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 4px
+        height: 4px
+        border: 2px solid transparent
+        margin-left: -4px
+        transform: translate(-50%, -50%) rotate(45deg)
+        transform-origin: 50% 50%
+        border-left-color: #666666
+        border-bottom-color: #666666
+        transition: all ease .3s
+
+.mobile-menu__close
+    position: absolute
+    width: 36px
+    height: 36px
+    border: 1px solid #c2c2c2
+    background-color: #fbfbfb
+    box-sizing: border-box
+    right: 6px
+    top: 6px
+    transition: all ease .3s
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        width: 15px
+        height: 2px
+        background-color: #666666
+        transform-origin: 50% 50%
+        transition: all ease .3s
+    &::before
+        transform: translate(-50%, -50%) rotate(45deg)
+    &::after
+        transform: translate(-50%, -50%) rotate(-45deg)
+    &:hover
+        border: 1px solid #404040
+        background-color: #fbfbfb
+        &::before,
+        &::after
+            background-color: #000000
+
+.mobile-menu__eye
+    box-sizing: border-box
+    left: 6px
+    top: 6px
+    width: 36px
+    height: 36px
+    background-color: #333333
+    position: absolute
+    transition: all ease .3s
+    &::before
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        background: url(../img/icon-eye.svg) no-repeat 50% 50%
+        background-size: contain
+        width: 25px
+        height: 25px
+        opacity: 0.6
+        transform: translate(-50%, -50%)
+        transition: all ease .3s
+    &:hover
+        background-color: #000000
+        &::before
+            opacity: 1
+
+.mobile-menu__submenu
+    padding: 0
+    margin: 0
+    li
+        list-style: none
+        display: block
+        border-bottom: 1px dotted #d3d5d4
+        a
+            display: block
+            color: #666666
+            font-size: 16px
+            line-height: 1
+            padding: 10px 60px 10px 70px
+            text-decoration: none
+            &:hover
+                text-decoration: none
+                background-color: #f2f1f1
+        &.active
+            a
+                color: #0099cc
+        &.parent
+            a
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    right: 38px
+                    width: 16px
+                    height: 16px
+                    top: 50%
+                    margin-top: -8px
+                    border-radius: 2px
+                    color: #3e3d3d
+                &::after
+                    content: ''
+                    position: absolute
+                    right: 44px
+                    top: 50%
+                    margin-top: -3px
+                    width: 3px
+                    height: 3px
+                    border: 2px solid transparent
+                    border-right-color: #3e3d3d
+                    border-bottom-color: #3e3d3d
+                    transform: rotate(-45deg)
+                &:hover
+                    &::before
+                        background-color: #e9e7e7
+
+.mobile-menu__menu
+    padding: 0
+    margin: 0
+    li
+        list-style: none
+        display: block
+        border-bottom: 1px dotted #d3d5d4
+        a
+            display: block
+            color: #333333
+            font-size: 18px
+            line-height: 1
+            font-weight: 500
+            text-transform: uppercase
+            letter-spacing: 0.18px
+            padding: 15px 74px 15px 56px
+            text-decoration: none
+            &:hover
+                text-decoration: none
+                background-color: #f2f1f1
+        &.active
+            a
+                color: #0099cc
+        &.parent
+            a
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    right: 58px
+                    width: 16px
+                    height: 16px
+                    top: 50%
+                    margin-top: -8px
+                    border-radius: 2px
+                    color: #3e3d3d
+                &::after
+                    content: ''
+                    position: absolute
+                    right: 64px
+                    top: 50%
+                    margin-top: -3px
+                    width: 3px
+                    height: 3px
+                    border: 2px solid transparent
+                    border-right-color: #3e3d3d
+                    border-bottom-color: #3e3d3d
+                    transform: rotate(-45deg)
+                &:hover
+                    &::before
+                        background-color: #e9e7e7
