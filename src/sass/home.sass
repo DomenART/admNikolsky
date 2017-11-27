@@ -8,7 +8,9 @@
     position: relative
         
 .home-slider__images
-    height: 929px
+    height: 929px !important
+    @media (max-width: $breakpoint-medium-max)
+        height: 760px !important
     @media (max-width: $breakpoint-small-max)
         height: 593px !important
     @media (max-width: $breakpoint-xsmall-max)
@@ -384,6 +386,7 @@
         justify-content: space-between
         flex-direction: column
     @media (max-width: $breakpoint-xsmall-max)
+        height: 320px
         padding: 20px 8px 20px 16px
 
 .homepage-month-event__header
@@ -501,9 +504,8 @@
         margin-bottom: 7px !important
 
 .homepage-documents
-    padding: 40px 40px 26px 41px
-    background-color: #3f90c4
     margin-bottom: 10px
+    padding: 40px 40px 30px 41px
     background-color: #3f90c4
     position: relative
     &::before
