@@ -1,0 +1,93 @@
+@mixin about-tile
+    display: block
+    box-sizing: border-box
+    padding: 22px 35px 32px 41px
+    text-decoration: none
+    &:hover
+        text-decoration: none
+
+@mixin about-tile__title
+    margin: 30px 0 32px
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.36)
+    font-size: 24px
+    font-weight: 900
+    letter-spacing: 0.24px
+
+.button-more--about
+    margin-bottom: 28px
+    text-transform: uppercase
+    font-weight: 500
+    &:hover
+        background-color: #2894cb
+        color: #ffffff
+
+.about-settlement
+    @include about-tile
+    background:  url('../img/gradient-about.png') 0% 0% no-repeat, #1c97c7 url('../img/about-settlement.jpg') 50% 50% no-repeat
+    background-size: auto, cover
+
+.about-settlement__title
+    @include about-tile__title
+    color: #ffffff
+
+.about-news
+    @include about-tile
+    background-color: #f7f7f7
+
+.about-news__title
+    @include about-tile__title
+    color: #2c8dbb
+
+.about-news-last__date
+    display: block
+    margin-bottom: 8px
+    color: #ababab
+    font-size: 10px
+    font-weight: 700
+    letter-spacing: 0.25px
+
+.about-news-last__title
+    color: #006699
+    font-weight: 700
+    font-size: 14px
+    line-height: 1.2
+
+.about-history
+    @include about-tile
+    background:  url('../img/gradient-about.png') 0% 0% no-repeat, #f7f7f7 url('../img/about-history.jpg') 50% 50% no-repeat
+    background-size: auto, cover
+
+.about-history__title
+     @include about-tile__title
+     color: #ffffff
+
+.about-honor
+    @include about-tile
+    background:  url('../img/gradient-about.png') 0% 0% no-repeat, #219c96 url('../img/about-honor.jpg') 50% 50% no-repeat
+    background-size: auto, cover
+    background-color: #f7f7f7  
+
+.about-honor__title
+     @include about-tile__title
+     color: #ffffff
+
+.about-symbol
+    @include about-tile
+    background:  url('../img/gradient-about.png') 0% 0% no-repeat, #d59107 url('../img/about-symbol.jpg') 50% 50% no-repeat
+    background-size: auto, cover
+
+.about-symbol__title
+     @include about-tile__title
+     color: #ffffff
+
+.about-gallery
+    @include about-tile
+    background:  url('../img/gradient-about.png') 0% 0% no-repeat, #1c97c7 url('../img/about-gallery.jpg') 50% 50% no-repeat
+    background-size: auto, cover
+
+.about-gallery__title
+    @include about-tile__title
+    color: #ffffff
+
+.about__text
+    margin: 63px 0 140px
