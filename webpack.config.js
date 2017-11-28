@@ -4,14 +4,16 @@ const version = require('./package.json').version;
 const env = process.env.WEBPACK_ENV;
 
 const PATHS = {
-    source: path.join(__dirname, 'src/'),
-    build: path.join(__dirname, 'dist/')
+	source: path.join(__dirname, 'src/'),
+    build: path.join(__dirname, 'public/assets/template/')
 }
 
 // Main Settings config
 module.exports = {
     entry: {
-        main: PATHS.source + 'index.js'
+        main: PATHS.source + 'index.js',
+		ajaxform: PATHS.source + 'js/ajaxform.js',
+        tickets: PATHS.source + 'js/tickets.js'
     },
     output: {
         path: PATHS.build,
